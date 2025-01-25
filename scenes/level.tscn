@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://bjp7lcojflgop" path="res://scenes/bubble.tscn" id="1_83uus"]
 [ext_resource type="PackedScene" uid="uid://cb47nxe3bwv83" path="res://scenes/player.tscn" id="2_w7c3h"]
-[ext_resource type="Texture2D" uid="uid://cti2niv6h60vn" path="res://icon.svg" id="3_w8frs"]
-[ext_resource type="Script" uid="uid://dikp3uej3hu5q" path="res://scripts/cursor.gd" id="4_mx8sn"]
+[ext_resource type="Texture2D" uid="uid://b8gukqdws0dic" path="res://textures/cursor.png" id="3_fmf4g"]
+[ext_resource type="Script" path="res://scripts/cursor.gd" id="4_mx8sn"]
 
 [sub_resource type="Environment" id="Environment_mx8sn"]
 background_mode = 3
@@ -47,7 +47,7 @@ position = Vector2(289, 306)
 [node name="Cursor" type="Sprite2D" parent="CanvasLayer"]
 unique_name_in_owner = true
 position = Vector2(-97, -81)
-texture = ExtResource("3_w8frs")
+texture = ExtResource("3_fmf4g")
 script = ExtResource("4_mx8sn")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]

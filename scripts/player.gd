@@ -8,6 +8,10 @@ const SPEED := 32.0
 const JUMP_VEL := 80.0
 const GRAVITY := 80.0
 
+var in_bubble: bool:
+	get:
+		return (%PlayerBubble.global_position - global_position).length() < %PlayerBubble.radius
+
 
 func _process(delta: float) -> void:
 	if is_on_floor():
@@ -64,6 +68,9 @@ func calculate_bubble_air(time: float) -> float:
 
 var bubble_pellet := preload("res://scenes/pellet.tscn")
 func shoot_bubble(target: Vector2, time: float):
+	if not in_bubble:
+		return
+	
 	const MIN_TIME := 0.2
 	if (time < MIN_TIME):
 		return

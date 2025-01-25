@@ -13,14 +13,7 @@ var in_bubble: bool:
 		return (%PlayerBubble.global_position - global_position).length() < %PlayerBubble.radius
 
 
-func _process(delta: float) -> void:
-	if is_on_floor():
-		if Input.is_action_just_pressed("jump"):
-			velocity.y -= JUMP_VEL
-	else:
-		velocity.y += GRAVITY * delta;
-
-	var direction := Input.get_axis("move_left", "move_right")
+func face(direction: int) -> void:
 	if direction < 0.0:
 		sprite.flip_h = true
 		gun.offset = Vector2(-3.25, -2.68)
@@ -29,12 +22,26 @@ func _process(delta: float) -> void:
 		gun.offset = Vector2(3.25, -2.68)
 	gun.flip_h = sprite.flip_h;
 
+
+func _process(delta: float) -> void:
+	if is_on_floor():
+		if Input.is_action_just_pressed("jump"):
+			velocity.y -= JUMP_VEL
+	else:
+		velocity.y += GRAVITY * delta;
+
+	var direction := Input.get_axis("move_left", "move_right")
 	if direction:
+		face(int(direction))
 		velocity.x = direction * SPEED
 		sprite.play("walk")
 	else:
 		velocity.x = move_toward(velocity.x, 0.0, SPEED)
 		sprite.play("idle")
+		if %Cursor.global_position.x > global_position.x:
+			face(1)
+		elif %Cursor.global_position.x < global_position.x:
+			face(-1)
 
 	move_and_slide()
 
@@ -70,16 +77,17 @@ var bubble_pellet := preload("res://scenes/pellet.tscn")
 func shoot_bubble(target: Vector2, time: float):
 	if not in_bubble:
 		return
-	
+
 	const MIN_TIME := 0.2
 	if (time < MIN_TIME):
 		return
-	
+
 	var pellet := bubble_pellet.instantiate()
 	%Pellets.add_child(pellet)
 	pellet.velocity = (target - global_position).normalized() * calculate_bubble_speed(time)
 	pellet.air = calculate_bubble_air(time)
 	pellet.player_made = true
 	pellet.global_position = global_position
-	
-	%PlayerBubble.velocity += -pellet.velocity * 0.25
+
+	%PlayerBubble.velocity += -pellet.velocity * 0.5
+	%PlayerBubble.air -= pellet.air

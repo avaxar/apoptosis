@@ -41,6 +41,17 @@ func _process(delta: float) -> void:
 	elif air < 0.0 or air > 100.0:
 		pop()
 
+	if self == %PlayerBubble:
+		const LEFT_WALL := 150.0
+		if position.x - radius < LEFT_WALL:
+			velocity.x *= -1
+			position.x = radius + LEFT_WALL
+
+		const RIGHT_WALL := 1130
+		if position.x + radius > RIGHT_WALL:
+			velocity.x *= -1
+			position.x = RIGHT_WALL - radius
+
 	velocity -= velocity * 0.32 * delta
 	position += velocity * delta
 	rotation += rot_velocity * delta

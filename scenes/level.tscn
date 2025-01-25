@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://40mtfiq51p3d"]
+[gd_scene load_steps=8 format=3 uid="uid://40mtfiq51p3d"]
 
 [ext_resource type="PackedScene" uid="uid://bjp7lcojflgop" path="res://scenes/bubble.tscn" id="1_83uus"]
 [ext_resource type="PackedScene" uid="uid://cb47nxe3bwv83" path="res://scenes/player.tscn" id="2_w7c3h"]
 [ext_resource type="Texture2D" uid="uid://b8gukqdws0dic" path="res://textures/cursor.png" id="3_fmf4g"]
 [ext_resource type="Script" path="res://scripts/cursor.gd" id="4_mx8sn"]
+[ext_resource type="PackedScene" uid="uid://dq37o2n0pe38a" path="res://scenes/enemy_bubble.tscn" id="4_tepyj"]
 [ext_resource type="PackedScene" uid="uid://dumiogewe3lma" path="res://scenes/background.tscn" id="5_aievo"]
 
 [sub_resource type="Environment" id="Environment_mx8sn"]
@@ -44,6 +45,20 @@ unique_name_in_owner = true
 
 [node name="Enemies" type="Node2D" parent="."]
 unique_name_in_owner = true
+
+[node name="EnemyBubble" parent="Enemies" instance=ExtResource("4_tepyj")]
+position = Vector2(139, 129)
+
+[node name="EnemyBubble2" parent="Enemies" instance=ExtResource("4_tepyj")]
+position = Vector2(141, 350)
+
+[node name="EnemyBubble3" parent="Enemies" instance=ExtResource("4_tepyj")]
+position = Vector2(1128, 120)
+scale = Vector2(-1, 1)
+
+[node name="EnemyBubble4" parent="Enemies" instance=ExtResource("4_tepyj")]
+position = Vector2(1137, 348)
+scale = Vector2(-1, 1)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

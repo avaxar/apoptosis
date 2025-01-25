@@ -45,5 +45,19 @@ func pop() -> void:
 	popped = true
 
 
+func _on_area_entered(area) -> void:
+	print(area, " entered")
+	var parent = area.get_parent()
+
+	if parent is Pellet:
+		if parent.player_made and self == get_node_or_null("%PlayerBubble"):
+			return
+		if not parent.player_made and self != get_node_or_null("%PlayerBubble"):
+			return
+		parent.pop()
+
+	pop()
+
+
 func _on_timer_timeout() -> void:
 	queue_free()

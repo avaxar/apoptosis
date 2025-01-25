@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 
+@onready var collision = $CollisionShape2D
 @onready var sprite = $AnimatedSprite2D
 @onready var gun = $Gun
 
@@ -24,6 +25,9 @@ func face(direction: int) -> void:
 
 
 func _process(delta: float) -> void:
+	if %PlayerBubble.popped:
+		collision.disabled = true
+	
 	if is_on_floor():
 		if Input.is_action_just_pressed("jump"):
 			velocity.y -= JUMP_VEL
@@ -44,16 +48,23 @@ func _process(delta: float) -> void:
 			face(-1)
 
 	move_and_slide()
-
+	
+	if last_shot < last_mouse_click:
+		var period := Time.get_unix_time_from_system() - last_mouse_click
+		if calculate_bubble_air(period) > %PlayerBubble.air:
+			shoot_bubble(get_viewport().get_mouse_position(), period)
 
 var last_mouse_click: float
+var last_shot: float
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			if event.pressed:
 				last_mouse_click = Time.get_unix_time_from_system()
 			else:
+				last_shot = Time.get_unix_time_from_system()
 				shoot_bubble(event.position, Time.get_unix_time_from_system() - last_mouse_click)
+
 
 func calculate_bubble_factor(time: float) -> float:
 	const MIN_TIME := 0.2
@@ -89,5 +100,15 @@ func shoot_bubble(target: Vector2, time: float):
 	pellet.player_made = true
 	pellet.global_position = global_position
 
-	%PlayerBubble.velocity += -pellet.velocity * 0.5
 	%PlayerBubble.air -= pellet.air
+	if %PlayerBubble.air > 0.0:
+		%PlayerBubble.velocity += -pellet.velocity * 0.5
+
+
+func regenerate_bubble(delta: float):
+	const MAX_REGEN := 50.0
+	const REGEN_WAIT := 2.0
+	const REGEN_SPEED := 5.0
+
+	if Time.get_unix_time_from_system() - last_shot >= REGEN_WAIT:
+		%PlayerBubble.air += clampf(REGEN_SPEED * delta, 0.0, MAX_REGEN - %PlayerBubble.air)

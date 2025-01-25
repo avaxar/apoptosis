@@ -41,7 +41,10 @@ func _process(delta: float) -> void:
 	elif air < 0.0 or air > 100.0:
 		pop()
 
-	if self == %PlayerBubble:
+	if self == get_node_or_null("%PlayerBubble"):
+		if not popped:
+			%Player.regenerate_bubble(delta)
+
 		const LEFT_WALL := 150.0
 		if position.x - radius < LEFT_WALL:
 			velocity.x *= -1
@@ -62,13 +65,16 @@ func pop() -> void:
 	if popped:
 		return
 
-	sphere.set_deferred("disable", true)
+	set_deferred("monitoring", false)
+	set_deferred("monitorable", false)
 	sprite.play("pop")
 	rot_velocity = (randf() - 0.5) * PI
 	popped = true
 	
-	if self == %PlayerBubble:
+	if self == get_node_or_null("%PlayerBubble"):
 		%Player.call_deferred("reparent", get_parent())
+	elif get_node_or_null("Enemy"):
+		$Enemy.call_deferred("reparent", get_parent())
 
 
 func _on_area_entered(area) -> void:
@@ -76,7 +82,9 @@ func _on_area_entered(area) -> void:
 	var parent = area.get_parent()
 
 	if parent is Pellet:
-		if parent.player_made and self == %PlayerBubble:
+		if parent.player_made and self == get_node_or_null("%PlayerBubble"):
+			return
+		if not parent.player_made and self != get_node_or_null("%PlayerBubble"):
 			return
 		parent.pop()
 

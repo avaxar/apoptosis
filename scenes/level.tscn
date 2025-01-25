@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://40mtfiq51p3d"]
+
+[ext_resource type="PackedScene" uid="uid://bjp7lcojflgop" path="res://scenes/bubble.tscn" id="1_83uus"]
+[ext_resource type="PackedScene" uid="uid://cb47nxe3bwv83" path="res://scenes/player.tscn" id="2_w7c3h"]
+[ext_resource type="Texture2D" uid="uid://cti2niv6h60vn" path="res://icon.svg" id="3_w8frs"]
+[ext_resource type="Script" uid="uid://dikp3uej3hu5q" path="res://scripts/cursor.gd" id="4_mx8sn"]
+
+[sub_resource type="Environment" id="Environment_mx8sn"]
+background_mode = 3
+background_energy_multiplier = 0.0
+glow_enabled = true
+glow_intensity = 8.0
+glow_hdr_threshold = 0.1
+glow_hdr_scale = 4.0
+glow_hdr_luminance_cap = 256.0
+fog_mode = 1
+fog_light_color = Color(1, 0.0384708, 0.407676, 1)
+fog_light_energy = 14.2
+fog_sun_scatter = 2.96
+fog_density = 0.972
+fog_sky_affect = 0.222
+fog_height = -1024.0
+fog_height_density = 1.8042
+volumetric_fog_density = 0.4675
+volumetric_fog_emission_energy = 1024.0
+
+[node name="Level" type="Node2D"]
+
+[node name="PlayerBubble" parent="." instance=ExtResource("1_83uus")]
+unique_name_in_owner = true
+position = Vector2(645, 389)
+
+[node name="Player" parent="PlayerBubble" instance=ExtResource("2_w7c3h")]
+unique_name_in_owner = true
+position = Vector2(-5, -109)
+
+[node name="Pellets" type="Node2D" parent="."]
+unique_name_in_owner = true
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="Bubble" parent="Enemies" instance=ExtResource("1_83uus")]
+position = Vector2(289, 306)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Cursor" type="Sprite2D" parent="CanvasLayer"]
+unique_name_in_owner = true
+position = Vector2(-97, -81)
+texture = ExtResource("3_w8frs")
+script = ExtResource("4_mx8sn")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_mx8sn")

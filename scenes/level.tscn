@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://40mtfiq51p3d"]
+[gd_scene load_steps=13 format=3 uid="uid://40mtfiq51p3d"]
 
 [ext_resource type="PackedScene" uid="uid://bjp7lcojflgop" path="res://scenes/bubble.tscn" id="1_83uus"]
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_hl4t3"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dseix45i1xgtx" path="res://scenes/map.tscn" id="5_tljte"]
 [ext_resource type="Texture2D" uid="uid://n2puvvyp4l2v" path="res://textures/height_bar.png" id="7_akayg"]
 [ext_resource type="Texture2D" uid="uid://cgaoihbubudpn" path="res://textures/mari_arrow.png" id="8_aa6sx"]
+[ext_resource type="Texture2D" uid="uid://ddju8h4t68s1q" path="res://textures/caca_arrow.png" id="10_pd17x"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_ri7t0"]
 size = Vector2(1280, 720)
@@ -74,6 +75,10 @@ texture = ExtResource("7_akayg")
 [node name="Mari" type="Sprite2D" parent="CanvasLayer/HeightBar"]
 position = Vector2(1192, 32)
 texture = ExtResource("8_aa6sx")
+
+[node name="Caca" type="Sprite2D" parent="CanvasLayer/HeightBar"]
+position = Vector2(1192, 32)
+texture = ExtResource("10_pd17x")
 
 [node name="FillColor" type="MeshInstance2D" parent="CanvasLayer"]
 unique_name_in_owner = true

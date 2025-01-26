@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b52hupckai2t4"]
+
+[ext_resource type="Texture2D" uid="uid://f5ihj03we40y" path="res://textures/rusty_pipe.png" id="1_jlyfv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x5hwt"]
+size = Vector2(50, 8.875)
+
+[node name="RustyPipe" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("1_jlyfv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_x5hwt")

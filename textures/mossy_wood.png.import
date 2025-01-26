@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyr6u314t8x1m"
-path="res://.godot/imported/Debris_Obstacle.png-9e0e0c2c2b052ddac975454f4720a32f.ctex"
+uid="uid://dh2o3t6j68s42"
+path="res://.godot/imported/mossy_wood.png-d68f6f105c2bb9ddd7dadf4e1ed96a04.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Debris_Obstacle.png"
-dest_files=["res://.godot/imported/Debris_Obstacle.png-9e0e0c2c2b052ddac975454f4720a32f.ctex"]
+source_file="res://textures/mossy_wood.png"
+dest_files=["res://.godot/imported/mossy_wood.png-d68f6f105c2bb9ddd7dadf4e1ed96a04.ctex"]
 
 [params]
 

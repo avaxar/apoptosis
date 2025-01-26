@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgmbfvm61cmyo"
-path="res://.godot/imported/rock_obstacles.png-74c04810f91b0a1987f64e9fba17ca41.ctex"
+uid="uid://f5ihj03we40y"
+path="res://.godot/imported/rusty_pipe.png-a88684033cfdfed3e846d260d5baa1a6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/rock_obstacles.png"
-dest_files=["res://.godot/imported/rock_obstacles.png-74c04810f91b0a1987f64e9fba17ca41.ctex"]
+source_file="res://textures/rusty_pipe.png"
+dest_files=["res://.godot/imported/rusty_pipe.png-a88684033cfdfed3e846d260d5baa1a6.ctex"]
 
 [params]
 

@@ -137,7 +137,8 @@ unique_name_in_owner = true
 z_index = 123
 
 [node name="Pendopo" type="AnimatedSprite2D" parent="Background"]
-position = Vector2(640, 512)
+position = Vector2(664, 496)
+scale = Vector2(1.15306, 1.15306)
 sprite_frames = SubResource("SpriteFrames_37squ")
 autoplay = "default"
 frame = 6

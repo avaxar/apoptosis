@@ -18,7 +18,7 @@ func _process(delta: float) -> void:
 	progression += game_pace * delta
 
 	if progression >= 100.0:
-		get_tree().change_scene_to_file("res://scenes/victory.tscn")
+		get_tree().change_scene_to_file("res://scenes/menu.tscn")
 	elif progression >= 95.0:
 		var x := ((progression - 95.0) / 5.0) ** 2
 		%FillColor.modulate = Color(1.0, 1.0, 1.0, x)

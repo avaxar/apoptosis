@@ -2,7 +2,7 @@ extends Node2D
 
 
 const Caca_pos = Vector2(0, 0)
-const Mari_pos = Vector2(400,300)
+const Mari_pos = Vector2(305,300)
 
 var speed: float
 const start_speed: float = 4.0 
@@ -28,5 +28,5 @@ func _process(_delta: float) -> void:
 	
 	if $caca.position.y <= -350:
 		$caca.position.y = 750
-	if $mari.position.y <= -350:
+	if $mari.position.y <= -500:
 		$mari.position.y = 750

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://ciq61o63jc8e7"]
 
-[ext_resource type="Texture2D" uid="uid://cgmbfvm61cmyo" path="res://textures/rock_obstacles.png" id="1_ablxb"]
+[ext_resource type="Texture2D" path="res://textures/rock_obstacles.png" id="1_ablxb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_43pay"]
 size = Vector2(52.2946, 52.241)

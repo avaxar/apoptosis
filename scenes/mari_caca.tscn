@@ -195,7 +195,7 @@ autoplay = "new_animation"
 
 [node name="mari" type="Area2D" parent="."]
 position = Vector2(499, 297)
-scale = Vector2(1.35327, 1.36307)
+scale = Vector2(1.55684, 1.60569)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="mari"]
 position = Vector2(441, 243)

@@ -12,7 +12,7 @@ script = ExtResource("1_bg62f")
 [node name="background1" type="Area2D" parent="."]
 
 [node name="Sprite2D2" type="Sprite2D" parent="background1"]
-modulate = Color(0.0581956, 0.254608, 0.347791, 1)
+modulate = Color(0.111015, 0.488176, 0.682502, 1)
 position = Vector2(640, 360)
 texture = ExtResource("2_gnqxg")
 

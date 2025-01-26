@@ -114,8 +114,8 @@ func shoot_bubble(target: Vector2, time: float):
 
 func regenerate_bubble(delta: float):
 	const MAX_REGEN := 100.0
-	const REGEN_WAIT := 1.5
-	const REGEN_SPEED := 7.5
+	const REGEN_WAIT := 1.0
+	const REGEN_SPEED := 10.0
 
 	if Time.get_unix_time_from_system() - last_shot >= REGEN_WAIT:
 		%PlayerBubble.air += clampf(REGEN_SPEED * delta, 0.0, MAX_REGEN - %PlayerBubble.air)

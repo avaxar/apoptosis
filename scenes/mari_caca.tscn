@@ -1,0 +1,211 @@
+[gd_scene load_steps=28 format=3 uid="uid://dd1t7y1nfk702"]
+
+[ext_resource type="Script" path="res://scenes/mari_and_caca.gd" id="1_aqhai"]
+[ext_resource type="Texture2D" uid="uid://bvf3g8cyl08vg" path="res://textures/caca_idle.png" id="2_c57cj"]
+[ext_resource type="Texture2D" uid="uid://el777tmqy4d8" path="res://textures/bubble_idle.png" id="3_aar8s"]
+[ext_resource type="Texture2D" uid="uid://ctcrsqikgrp2x" path="res://textures/mari_idle.png" id="3_daxjp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rg77c"]
+atlas = ExtResource("2_c57cj")
+region = Rect2(0, 0, 28, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oa5it"]
+atlas = ExtResource("2_c57cj")
+region = Rect2(28, 0, 28, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4kqce"]
+atlas = ExtResource("2_c57cj")
+region = Rect2(56, 0, 28, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_60eus"]
+atlas = ExtResource("2_c57cj")
+region = Rect2(84, 0, 28, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qshcc"]
+atlas = ExtResource("2_c57cj")
+region = Rect2(0, 29, 28, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wwfy7"]
+atlas = ExtResource("2_c57cj")
+region = Rect2(28, 29, 28, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u65d7"]
+atlas = ExtResource("2_c57cj")
+region = Rect2(56, 29, 28, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sg32x"]
+atlas = ExtResource("2_c57cj")
+region = Rect2(84, 29, 28, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w5dcv"]
+atlas = ExtResource("2_c57cj")
+region = Rect2(0, 58, 28, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2uvnw"]
+atlas = ExtResource("2_c57cj")
+region = Rect2(28, 58, 28, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_24sk5"]
+atlas = ExtResource("2_c57cj")
+region = Rect2(56, 58, 28, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yrdj6"]
+atlas = ExtResource("3_aar8s")
+region = Rect2(0, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b84hl"]
+atlas = ExtResource("3_aar8s")
+region = Rect2(56, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mdq5g"]
+atlas = ExtResource("3_aar8s")
+region = Rect2(112, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gmsr8"]
+atlas = ExtResource("3_aar8s")
+region = Rect2(0, 56, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gq17p"]
+atlas = ExtResource("3_aar8s")
+region = Rect2(56, 56, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8f36c"]
+atlas = ExtResource("3_aar8s")
+region = Rect2(112, 56, 56, 56)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xvhiq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rg77c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oa5it")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4kqce")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_60eus")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qshcc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wwfy7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u65d7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sg32x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w5dcv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2uvnw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24sk5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yrdj6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b84hl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdq5g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmsr8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gq17p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8f36c")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u0hjp"]
+atlas = ExtResource("3_daxjp")
+region = Rect2(0, 0, 28, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8rys0"]
+atlas = ExtResource("3_daxjp")
+region = Rect2(28, 0, 28, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7tmw5"]
+atlas = ExtResource("3_daxjp")
+region = Rect2(56, 0, 28, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yl0t5"]
+atlas = ExtResource("3_daxjp")
+region = Rect2(84, 0, 28, 31)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_706pg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u0hjp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8rys0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7tmw5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yl0t5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="mari and caca" type="Node2D"]
+script = ExtResource("1_aqhai")
+
+[node name="caca" type="Area2D" parent="."]
+position = Vector2(20, 26)
+scale = Vector2(1.39315, 1.36819)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="caca"]
+position = Vector2(235, 225)
+scale = Vector2(1.715, 1.715)
+sprite_frames = SubResource("SpriteFrames_xvhiq")
+autoplay = "default"
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="caca"]
+position = Vector2(235, 225)
+scale = Vector2(1.715, 1.715)
+sprite_frames = SubResource("SpriteFrames_xvhiq")
+animation = &"new_animation"
+autoplay = "new_animation"
+
+[node name="mari" type="Area2D" parent="."]
+position = Vector2(499, 297)
+scale = Vector2(1.35327, 1.36307)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="mari"]
+position = Vector2(441, 243)
+scale = Vector2(-1.82, 1.82)
+sprite_frames = SubResource("SpriteFrames_706pg")
+autoplay = "default"
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="mari"]
+position = Vector2(439, 244)
+scale = Vector2(1.715, 1.715)
+sprite_frames = SubResource("SpriteFrames_xvhiq")
+animation = &"new_animation"
+autoplay = "new_animation"

@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8ix0al6yivd3"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_80dfj"]
+[ext_resource type="PackedScene" uid="uid://dumiogewe3lma" path="res://scenes/background.tscn" id="2_c6qri"]
+[ext_resource type="PackedScene" uid="uid://dd1t7y1nfk702" path="res://scenes/mari_caca.tscn" id="3_b7cvj"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_80dfj")
+
+[node name="Background" parent="." instance=ExtResource("2_c6qri")]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 128.0
+offset_right = 511.0
+offset_bottom = 194.0
+scale = Vector2(6.10794, 6.28773)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Play"
+
+[node name="Credits" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Credits"
+
+[node name="mari and caca" parent="." instance=ExtResource("3_b7cvj")]
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]

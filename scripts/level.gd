@@ -1,6 +1,7 @@
 extends Node2D
 
-
+@onready var music = $Music
+@onready var crumbling = $Crumbling
 var progression := 0.0
 @export var game_time := 180.0
 var game_pace := 100.0 / game_time
@@ -8,6 +9,8 @@ var game_pace := 100.0 / game_time
 
 
 func _ready() -> void:
+	music.play()
+	crumbling.play()
 	pass
 
 

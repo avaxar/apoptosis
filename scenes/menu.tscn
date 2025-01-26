@@ -1,11 +1,15 @@
-[gd_scene load_steps=9 format=3 uid="uid://b8ix0al6yivd3"]
+[gd_scene load_steps=13 format=3 uid="uid://b8ix0al6yivd3"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_80dfj"]
 [ext_resource type="PackedScene" uid="uid://dumiogewe3lma" path="res://scenes/background.tscn" id="2_c6qri"]
 [ext_resource type="PackedScene" uid="uid://dd1t7y1nfk702" path="res://scenes/mari_caca.tscn" id="3_b7cvj"]
 [ext_resource type="Texture2D" uid="uid://4u26scx7nldu" path="res://textures/play.png" id="3_cpfpy"]
-[ext_resource type="Texture2D" uid="uid://c567kk05hbgxt" path="res://textures/credit.png" id="4_mra8f"]
+[ext_resource type="Texture2D" uid="uid://dsr356iucxwx4" path="res://textures/credits.png" id="4_svw2r"]
 [ext_resource type="Texture2D" uid="uid://bilao3ny3ayf0" path="res://textures/title.png" id="6_kc5dw"]
+[ext_resource type="AudioStream" uid="uid://c4x8qspclscpb" path="res://sound/menu_music.wav" id="7_ar2cc"]
+[ext_resource type="Texture2D" uid="uid://vdqccrb1uxu3" path="res://textures/menu.png" id="8_e6sfb"]
+[ext_resource type="AudioStream" uid="uid://capjirv8d6c1i" path="res://sound/pop.wav" id="9_n06ff"]
+[ext_resource type="Texture2D" uid="uid://b0lanfvg8gmqo" path="res://textures/list.png" id="10_jkjca"]
 
 [sub_resource type="Theme" id="Theme_685hw"]
 
@@ -46,7 +50,7 @@ icon = ExtResource("3_cpfpy")
 [node name="Credits" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme_type_variation = &"FlatButton"
-icon = ExtResource("4_mra8f")
+icon = ExtResource("4_svw2r")
 
 [node name="Node" type="Node2D" parent="."]
 
@@ -58,5 +62,29 @@ script = SubResource("GDScript_qqosf")
 
 [node name="mari and caca" parent="." instance=ExtResource("3_b7cvj")]
 
+[node name="MenuMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_ar2cc")
+volume_db = -16.133
+
+[node name="Menu" type="Button" parent="."]
+layout_mode = 0
+offset_left = 496.0
+offset_top = 536.0
+offset_right = 779.0
+offset_bottom = 664.0
+theme_type_variation = &"FlatButton"
+icon = ExtResource("8_e6sfb")
+
+[node name="Click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_n06ff")
+
+[node name="Names" type="Node2D" parent="."]
+position = Vector2(648, 288)
+
+[node name="Sprite2D" type="Sprite2D" parent="Names"]
+texture = ExtResource("10_jkjca")
+
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="button_up" from="MarginContainer/VBoxContainer/Credits" to="." method="_on_credits_button_up"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="button_up" from="Menu" to="." method="_on_menu_button_up"]

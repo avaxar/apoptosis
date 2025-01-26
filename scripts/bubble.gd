@@ -75,6 +75,8 @@ var popped := false
 func pop() -> void:
 	if popped:
 		return
+	$Pop.play()
+	
 
 	set_deferred("monitoring", false)
 	set_deferred("monitorable", false)

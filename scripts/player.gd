@@ -62,6 +62,7 @@ func _input(event: InputEvent) -> void:
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			if event.pressed:
 				last_mouse_click = Time.get_unix_time_from_system()
+				$Charge.play()
 			else:
 				last_shot = Time.get_unix_time_from_system()
 				shoot_bubble(event.position, Time.get_unix_time_from_system() - last_mouse_click)
@@ -84,7 +85,6 @@ func calculate_bubble_air(time: float) -> float:
 	const MAX_AIR := 30.0
 	return lerp(MIN_AIR, MAX_AIR, calculate_bubble_factor(time))
 
-
 var bubble_pellet := preload("res://scenes/pellet.tscn")
 func shoot_bubble(target: Vector2, time: float):
 	if not in_bubble:
@@ -93,6 +93,12 @@ func shoot_bubble(target: Vector2, time: float):
 	const MIN_TIME := 0.2
 	if (time < MIN_TIME):
 		return
+
+	$Charge.stop()
+	$Shoot.play()
+	if holding == 1:
+		holding = 0
+		$Hold.stop()
 
 	var pellet := bubble_pellet.instantiate()
 	%Pellets.add_child(pellet)
@@ -113,3 +119,8 @@ func regenerate_bubble(delta: float):
 
 	if Time.get_unix_time_from_system() - last_shot >= REGEN_WAIT:
 		%PlayerBubble.air += clampf(REGEN_SPEED * delta, 0.0, MAX_REGEN - %PlayerBubble.air)
+
+var holding := 0
+func _on_charge_finished() -> void:
+	$Hold.play()
+	holding = 1

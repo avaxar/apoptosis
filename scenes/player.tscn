@@ -1,9 +1,12 @@
-[gd_scene load_steps=17 format=3 uid="uid://cb47nxe3bwv83"]
+[gd_scene load_steps=20 format=3 uid="uid://cb47nxe3bwv83"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://ctcrsqikgrp2x" path="res://textures/mari_idle.png" id="2_g2els"]
 [ext_resource type="Texture2D" uid="uid://d3p6ivx3ers6f" path="res://textures/mari_walk.png" id="3_qhqgy"]
 [ext_resource type="Texture2D" uid="uid://dr20s4kqai4fd" path="res://textures/bubble_gun.png" id="4_dqkch"]
+[ext_resource type="AudioStream" uid="uid://fe57qath7uha" path="res://sound/hold.wav" id="5_swbrj"]
+[ext_resource type="AudioStream" uid="uid://12p5b4lx81ir" path="res://sound/shoot_quick.wav" id="6_xp0yg"]
+[ext_resource type="AudioStream" uid="uid://3hgbc0o2s2ou" path="res://sound/charge.wav" id="7_naebd"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3vyb7"]
 radius = 9.0
@@ -110,3 +113,17 @@ position = Vector2(5, -9)
 rotation = -0.0959931
 texture = ExtResource("4_dqkch")
 offset = Vector2(3.25, -2.68)
+
+[node name="Hold" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_swbrj")
+volume_db = -9.0
+
+[node name="Shoot" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_xp0yg")
+pitch_scale = 1.32
+
+[node name="Charge" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_naebd")
+volume_db = -9.0
+
+[connection signal="finished" from="Charge" to="." method="_on_charge_finished"]

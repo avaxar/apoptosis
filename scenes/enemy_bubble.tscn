@@ -1,9 +1,10 @@
-[gd_scene load_steps=15 format=3 uid="uid://dq37o2n0pe38a"]
+[gd_scene load_steps=16 format=3 uid="uid://dq37o2n0pe38a"]
 
 [ext_resource type="Script" path="res://scripts/enemy_bubble.gd" id="1_4lyxf"]
 [ext_resource type="PackedScene" uid="uid://bjp7lcojflgop" path="res://scenes/bubble.tscn" id="1_vcj8g"]
 [ext_resource type="Texture2D" uid="uid://caapnuudsxhcu" path="res://textures/enemy_front.png" id="2_gdsly"]
 [ext_resource type="Texture2D" uid="uid://dqp7cbgxpykba" path="res://textures/enemy_side.png" id="2_sxh0n"]
+[ext_resource type="AudioStream" uid="uid://c5ujnamls3tah" path="res://sound/enemybubble.wav" id="5_ljmft"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dmce7"]
 atlas = ExtResource("2_gdsly")
@@ -98,5 +99,9 @@ shape = SubResource("CapsuleShape2D_pcftv")
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
+
+[node name="Shoot" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_ljmft")
+volume_db = -21.638
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

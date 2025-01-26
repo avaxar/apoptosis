@@ -39,3 +39,4 @@ func _on_timer_timeout() -> void:
 	pellet.velocity = pellet_velocity * scale
 	pellet.air = pellet_air
 	pellet.global_position = enemy.global_position
+	$Shoot.play()

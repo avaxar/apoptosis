@@ -27,6 +27,15 @@ func _process(delta: float) -> void:
 										   Vector2(1192.0, 32.0),
 										   progression / 100.0 - ((progression / 100.0) ** 2 - 1) / 5)
 
+	if %PlayerBubble.popped:
+		%Barometer/Arrow.rotation_degrees = -140.0
+	else:
+		var air_deduction := 0.0
+		if %Cursor.held:
+			air_deduction = %Player.calculate_bubble_air(Time.get_unix_time_from_system() - %Player.last_mouse_click)
+		%Barometer/Arrow.rotation_degrees = lerp(-140.0, 140.0,
+												 clamp((%PlayerBubble.air - air_deduction) / 100.0, 0.0, 1.0))
+
 	%Map.position.y = progression / 100.0 * map_size
 	
 	if %Player.global_position.y >= 720:

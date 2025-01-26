@@ -27,6 +27,9 @@ func _process(delta: float) -> void:
 		const GRAVITY := 60.0
 		enemy.velocity.y += GRAVITY * delta;
 	enemy.move_and_slide()
+	
+	if bubble.popped:
+		timer.stop()
 
 
 var bubble_pellet := preload("res://scenes/pellet.tscn")

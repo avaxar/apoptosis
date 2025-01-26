@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://40mtfiq51p3d"]
+[gd_scene load_steps=15 format=3 uid="uid://40mtfiq51p3d"]
 
 [ext_resource type="PackedScene" uid="uid://bjp7lcojflgop" path="res://scenes/bubble.tscn" id="1_83uus"]
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_hl4t3"]
@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://dseix45i1xgtx" path="res://scenes/map.tscn" id="5_tljte"]
 [ext_resource type="Texture2D" uid="uid://n2puvvyp4l2v" path="res://textures/height_bar.png" id="7_akayg"]
 [ext_resource type="Texture2D" uid="uid://cgaoihbubudpn" path="res://textures/mari_arrow.png" id="8_aa6sx"]
+[ext_resource type="Texture2D" uid="uid://rltmn31tcea4" path="res://textures/barometer.png" id="8_ufp8b"]
+[ext_resource type="Texture2D" uid="uid://bf1b3uvrh0wqn" path="res://textures/barometer_arrow.png" id="9_7woni"]
 [ext_resource type="Texture2D" uid="uid://ddju8h4t68s1q" path="res://textures/caca_arrow.png" id="10_pd17x"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_ri7t0"]
@@ -62,6 +64,19 @@ unique_name_in_owner = true
 position = Vector2(-97, -81)
 texture = ExtResource("3_fmf4g")
 script = ExtResource("4_mx8sn")
+
+[node name="Barometer" type="Sprite2D" parent="CanvasLayer"]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.803922)
+position = Vector2(72, 648)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("8_ufp8b")
+
+[node name="Arrow" type="Sprite2D" parent="CanvasLayer/Barometer"]
+position = Vector2(0, -4.76837e-07)
+rotation = -2.46091
+texture = ExtResource("9_7woni")
+offset = Vector2(0.5, -4.5)
 
 [node name="HeightBar" type="Node2D" parent="CanvasLayer"]
 unique_name_in_owner = true

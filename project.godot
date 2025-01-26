@@ -13,8 +13,9 @@ config_version=5
 config/name="Apoptosis"
 run/main_scene="res://scenes/menu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
-boot_splash/show_image=false
+boot_splash/image="res://we_had_to_sell_out.png"
 config/icon="res://icon.svg"
+boot_splash/minimum_display_time=1000
 
 [display]
 

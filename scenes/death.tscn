@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhqyxj4drikjg"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_54ks0"]
+size = Vector2(1280, 720)
+
+[node name="Death" type="Node2D"]
+
+[node name="Red" type="MeshInstance2D" parent="."]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(640, 360)
+mesh = SubResource("QuadMesh_54ks0")

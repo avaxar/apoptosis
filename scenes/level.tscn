@@ -76,7 +76,7 @@ position = Vector2(1192, 32)
 texture = ExtResource("8_aa6sx")
 
 [node name="FillColor" type="MeshInstance2D" parent="CanvasLayer"]
-visible = false
+unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0)
 z_index = 4096
 position = Vector2(640, 360)

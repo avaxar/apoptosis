@@ -24,7 +24,6 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	if not enemy.is_on_floor():
-		print("bruh")
 		const GRAVITY := 60.0
 		enemy.velocity.y += GRAVITY * delta;
 	enemy.move_and_slide()

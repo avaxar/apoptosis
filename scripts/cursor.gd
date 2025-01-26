@@ -1,7 +1,6 @@
 extends Sprite2D
 
 
-@onready var canmod := $CanvasModulate
 var held := false
 
 
@@ -23,7 +22,7 @@ func _process(_delta: float) -> void:
 	if held:
 		var factor: float = %Player.calculate_bubble_factor(Time.get_unix_time_from_system() - %Player.last_mouse_click)
 		position += (Vector2(randf() - 0.5, randf() - 0.5)) * 10.0 * (factor ** 2)
-		canmod.color = Color(1.0, 1.0 - factor, 1.0 - factor, 1.0);
+		modulate = Color(1.0, 1.0 - factor, 1.0 - factor, 1.0);
 		%Player/Gun.offset += (Vector2(randf() - 0.5, randf() - 0.5)) * 5.0 * (factor ** 2)
 	else:
-		canmod.color = Color(1.0, 1.0, 1.0, 1.0);
+		modulate = Color(1.0, 1.0, 1.0, 1.0);

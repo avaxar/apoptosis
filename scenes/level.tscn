@@ -1,11 +1,17 @@
-[gd_scene load_steps=8 format=3 uid="uid://40mtfiq51p3d"]
+[gd_scene load_steps=12 format=3 uid="uid://40mtfiq51p3d"]
 
 [ext_resource type="PackedScene" uid="uid://bjp7lcojflgop" path="res://scenes/bubble.tscn" id="1_83uus"]
+[ext_resource type="Script" path="res://scripts/level.gd" id="1_hl4t3"]
 [ext_resource type="PackedScene" uid="uid://cb47nxe3bwv83" path="res://scenes/player.tscn" id="2_w7c3h"]
 [ext_resource type="Texture2D" uid="uid://b8gukqdws0dic" path="res://textures/cursor.png" id="3_fmf4g"]
 [ext_resource type="Script" path="res://scripts/cursor.gd" id="4_mx8sn"]
-[ext_resource type="PackedScene" uid="uid://dq37o2n0pe38a" path="res://scenes/enemy_bubble.tscn" id="4_tepyj"]
 [ext_resource type="PackedScene" uid="uid://dumiogewe3lma" path="res://scenes/background.tscn" id="5_aievo"]
+[ext_resource type="PackedScene" uid="uid://dseix45i1xgtx" path="res://scenes/map.tscn" id="5_tljte"]
+[ext_resource type="Texture2D" uid="uid://n2puvvyp4l2v" path="res://textures/height_bar.png" id="7_akayg"]
+[ext_resource type="Texture2D" uid="uid://cgaoihbubudpn" path="res://textures/mari_arrow.png" id="8_aa6sx"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_ri7t0"]
+size = Vector2(1280, 720)
 
 [sub_resource type="Environment" id="Environment_mx8sn"]
 background_mode = 3
@@ -27,39 +33,26 @@ volumetric_fog_density = 0.4675
 volumetric_fog_emission_energy = 1024.0
 
 [node name="Level" type="Node2D"]
+script = ExtResource("1_hl4t3")
 
 [node name="Background" parent="." instance=ExtResource("5_aievo")]
 z_index = -4096
 
 [node name="PlayerBubble" parent="." instance=ExtResource("1_83uus")]
 unique_name_in_owner = true
-position = Vector2(645, 389)
+position = Vector2(640, 528)
 
 [node name="Player" parent="PlayerBubble" instance=ExtResource("2_w7c3h")]
 unique_name_in_owner = true
 z_index = -1
-position = Vector2(-5, -109)
+position = Vector2(0, -8)
 collision_layer = 0
 
 [node name="Pellets" type="Node2D" parent="."]
 unique_name_in_owner = true
 
-[node name="Enemies" type="Node2D" parent="."]
+[node name="Map" parent="." instance=ExtResource("5_tljte")]
 unique_name_in_owner = true
-
-[node name="EnemyBubble" parent="Enemies" instance=ExtResource("4_tepyj")]
-position = Vector2(139, 129)
-
-[node name="EnemyBubble2" parent="Enemies" instance=ExtResource("4_tepyj")]
-position = Vector2(141, 350)
-
-[node name="EnemyBubble3" parent="Enemies" instance=ExtResource("4_tepyj")]
-position = Vector2(1128, 120)
-scale = Vector2(-1, 1)
-
-[node name="EnemyBubble4" parent="Enemies" instance=ExtResource("4_tepyj")]
-position = Vector2(1137, 348)
-scale = Vector2(-1, 1)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -69,9 +62,26 @@ position = Vector2(-97, -81)
 texture = ExtResource("3_fmf4g")
 script = ExtResource("4_mx8sn")
 
-[node name="CanvasModulate" type="CanvasModulate" parent="CanvasLayer/Cursor"]
-position = Vector2(97, 81)
-color = Color(0.802105, 0.0959041, 0.532696, 1)
+[node name="HeightBar" type="Node2D" parent="CanvasLayer"]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.501961)
+
+[node name="Bar" type="Sprite2D" parent="CanvasLayer/HeightBar"]
+position = Vector2(1240, 360)
+scale = Vector2(-1, 0.95)
+texture = ExtResource("7_akayg")
+
+[node name="Mari" type="Sprite2D" parent="CanvasLayer/HeightBar"]
+position = Vector2(1192, 32)
+texture = ExtResource("8_aa6sx")
+
+[node name="FillColor" type="MeshInstance2D" parent="CanvasLayer"]
+visible = false
+modulate = Color(1, 1, 1, 0)
+z_index = 4096
+position = Vector2(640, 360)
+mesh = SubResource("QuadMesh_ri7t0")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+unique_name_in_owner = true
 environment = SubResource("Environment_mx8sn")

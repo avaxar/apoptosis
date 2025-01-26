@@ -81,7 +81,7 @@ func calculate_bubble_speed(time: float) -> float:
 
 func calculate_bubble_air(time: float) -> float:
 	const MIN_AIR := 2.5
-	const MAX_AIR := 20.0
+	const MAX_AIR := 30.0
 	return lerp(MIN_AIR, MAX_AIR, calculate_bubble_factor(time))
 
 
@@ -107,7 +107,7 @@ func shoot_bubble(target: Vector2, time: float):
 
 
 func regenerate_bubble(delta: float):
-	const MAX_REGEN := 50.0
+	const MAX_REGEN := 100.0
 	const REGEN_WAIT := 2.0
 	const REGEN_SPEED := 5.0
 

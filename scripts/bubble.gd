@@ -12,8 +12,8 @@ var radius: float:
 		return sphere.shape.radius
 	set(new):
 		sphere.shape.radius = new
-var MIN_RADIUS := 40.0
-var MAX_RADIUS := 85.0
+var MIN_RADIUS := 30.0
+var MAX_RADIUS := 65.0
 
 var air: float:
 	get:
@@ -27,7 +27,7 @@ var in_player: bool
 
 
 func _ready() -> void:
-	air = 50.0
+	air = 100.0
 
 
 func _process(delta: float) -> void:
@@ -54,6 +54,17 @@ func _process(delta: float) -> void:
 		if position.x + radius > RIGHT_WALL:
 			velocity.x *= -1
 			position.x = RIGHT_WALL - radius
+		
+		if not popped:
+			const UPPER_WALL := 0.0
+			if position.y - radius < UPPER_WALL:
+				velocity.y *= -1
+				position.y = radius + UPPER_WALL
+
+			const BOTTOM_WALL := 720
+			if position.y + radius > BOTTOM_WALL:
+				velocity.y *= -1
+				position.y = BOTTOM_WALL - radius
 
 	velocity -= velocity * 0.32 * delta
 	position += velocity * delta

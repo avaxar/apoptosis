@@ -504,12 +504,12 @@ rotation = 3.29693
 scale = Vector2(5.875, 5.875)
 
 [node name="Pipe33" parent="Obstacles" instance=ExtResource("1_m1jmc")]
-position = Vector2(608, -12976)
+position = Vector2(576, -12976)
 rotation = 1.49924
 scale = Vector2(5.135, 5.135)
 
 [node name="Pipe34" parent="Obstacles" instance=ExtResource("1_m1jmc")]
-position = Vector2(608, -13216)
+position = Vector2(568, -13216)
 rotation = 1.62665
 scale = Vector2(5.25, 5.25)
 
@@ -550,48 +550,28 @@ scale = Vector2(2.295, 2.295)
 position = Vector2(128, -9152)
 scale = Vector2(7.655, 7.655)
 
-[node name="Wood10" parent="Obstacles" instance=ExtResource("5_reuwa")]
-position = Vector2(784, -12728)
-rotation = -1.64934
-scale = Vector2(3.155, 3.155)
-
-[node name="Wood11" parent="Obstacles" instance=ExtResource("5_reuwa")]
-position = Vector2(776, -12880)
-rotation = -1.5708
-scale = Vector2(3.155, 3.155)
-
-[node name="Wood12" parent="Obstacles" instance=ExtResource("5_reuwa")]
-position = Vector2(792, -13280)
-rotation = -1.44339
-scale = Vector2(3.155, 3.155)
-
-[node name="MossyWood6" parent="Obstacles" instance=ExtResource("2_vnfu7")]
-position = Vector2(784, -13072)
-rotation = -1.5708
-scale = Vector2(4.005, 4.005)
-
 [node name="Wood13" parent="Obstacles" instance=ExtResource("5_reuwa")]
-position = Vector2(784, -12728)
+position = Vector2(816, -12704)
 rotation = -1.64934
 scale = Vector2(3.155, 3.155)
 
 [node name="Wood14" parent="Obstacles" instance=ExtResource("5_reuwa")]
-position = Vector2(776, -12880)
+position = Vector2(816, -12880)
 rotation = -1.5708
 scale = Vector2(3.155, 3.155)
 
 [node name="Wood15" parent="Obstacles" instance=ExtResource("5_reuwa")]
-position = Vector2(792, -13280)
+position = Vector2(824, -13256)
 rotation = -1.44339
 scale = Vector2(3.155, 3.155)
 
 [node name="MossyWood7" parent="Obstacles" instance=ExtResource("2_vnfu7")]
-position = Vector2(784, -13072)
+position = Vector2(816, -13072)
 rotation = -1.5708
 scale = Vector2(4.005, 4.005)
 
 [node name="MossyWood8" parent="Obstacles" instance=ExtResource("2_vnfu7")]
-position = Vector2(336, -14960)
+position = Vector2(312, -14960)
 rotation = -2.96706
 scale = Vector2(4.005, 4.005)
 
@@ -618,12 +598,12 @@ rotation = 0.410152
 scale = Vector2(4.285, 4.285)
 
 [node name="RustyPipe32" parent="Obstacles" instance=ExtResource("3_2p52g")]
-position = Vector2(608, -12752)
+position = Vector2(576, -12752)
 rotation = -1.494
 scale = Vector2(4.285, 4.285)
 
 [node name="RustyPipe34" parent="Obstacles" instance=ExtResource("3_2p52g")]
-position = Vector2(488, -13400)
+position = Vector2(472, -13408)
 rotation = -2.50804
 scale = Vector2(6.145, 6.145)
 
@@ -648,16 +628,16 @@ rotation = -2.70701
 scale = Vector2(5.48, 5.48)
 
 [node name="RustyPipe33" parent="Obstacles" instance=ExtResource("3_2p52g")]
-position = Vector2(520, -12608)
+position = Vector2(480, -12608)
 rotation = -0.605629
 scale = Vector2(4.285, 4.285)
 
 [node name="Wood16" parent="Obstacles" instance=ExtResource("5_reuwa")]
-position = Vector2(504, -14952)
+position = Vector2(464, -14944)
 scale = Vector2(3.435, 3.435)
 
 [node name="Wood17" parent="Obstacles" instance=ExtResource("5_reuwa")]
-position = Vector2(792, -14952)
+position = Vector2(832, -14944)
 scale = Vector2(3.435, 3.435)
 
 [node name="Wood18" parent="Obstacles" instance=ExtResource("5_reuwa")]
@@ -773,7 +753,7 @@ pellet_interval = 1.5
 pellet_velocity = Vector2(250, -200)
 
 [node name="EnemyBubble21" parent="Enemies" instance=ExtResource("1_oxvxk")]
-position = Vector2(928, -12896)
+position = Vector2(936, -12912)
 scale = Vector2(-1, 1)
 
 [node name="EnemyBubble24" parent="Enemies" instance=ExtResource("1_oxvxk")]

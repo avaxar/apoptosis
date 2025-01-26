@@ -276,12 +276,12 @@ rotation = -1.01578
 scale = Vector2(2.42, 2.42)
 
 [node name="Wood4" parent="Obstacles" instance=ExtResource("5_reuwa")]
-position = Vector2(1444, -4506)
+position = Vector2(1288, -4560)
 rotation = 0.888373
 scale = Vector2(5.045, 5.045)
 
 [node name="Rock6" parent="Obstacles" instance=ExtResource("4_rjpqi")]
-position = Vector2(557, -5511)
+position = Vector2(623, -5510)
 scale = Vector2(3.615, 3.615)
 
 [node name="RustyPipe10" parent="Obstacles" instance=ExtResource("3_2p52g")]
@@ -384,6 +384,297 @@ scale = Vector2(4.62, 4.62)
 position = Vector2(1905, -7176)
 scale = Vector2(6.235, 6.235)
 
+[node name="Wood5" parent="Obstacles" instance=ExtResource("5_reuwa")]
+position = Vector2(648, -8096)
+rotation = 1.2706
+scale = Vector2(4, 4)
+
+[node name="Wood6" parent="Obstacles" instance=ExtResource("5_reuwa")]
+position = Vector2(656, -8544)
+rotation = 1.77849
+scale = Vector2(4, 4)
+
+[node name="Wood7" parent="Obstacles" instance=ExtResource("5_reuwa")]
+position = Vector2(776, -8688)
+rotation = 3.55524
+scale = Vector2(4, 4)
+
+[node name="RustyPipe19" parent="Obstacles" instance=ExtResource("3_2p52g")]
+position = Vector2(1535, -6732)
+rotation = 0.459022
+scale = Vector2(6.93, 6.93)
+
+[node name="RustyPipe20" parent="Obstacles" instance=ExtResource("3_2p52g")]
+position = Vector2(2202, -7101)
+rotation = 0.459022
+scale = Vector2(6.93, 6.93)
+
+[node name="RustyPipe23" parent="Obstacles" instance=ExtResource("3_2p52g")]
+position = Vector2(1090, -9612)
+rotation = -0.127409
+scale = Vector2(5.165, 5.165)
+
+[node name="Pipe24" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+position = Vector2(632, -9602)
+rotation = 0.253073
+scale = Vector2(3.49, 3.49)
+
+[node name="RustyPipe24" parent="Obstacles" instance=ExtResource("3_2p52g")]
+position = Vector2(468, -9588)
+rotation = -0.380482
+scale = Vector2(3.96, 3.96)
+
+[node name="Pipe25" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+position = Vector2(279, -9543)
+rotation = -0.125664
+scale = Vector2(4.685, 4.685)
+
+[node name="Pipe26" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+position = Vector2(78.0001, -9573)
+rotation = 0.380482
+scale = Vector2(4.435, 4.435)
+
+[node name="RustyPipe25" parent="Obstacles" instance=ExtResource("3_2p52g")]
+position = Vector2(-144, -9615)
+scale = Vector2(5.405, 5.405)
+
+[node name="RustyPipe26" parent="Obstacles" instance=ExtResource("3_2p52g")]
+position = Vector2(1315, -9614)
+rotation = 0.127409
+scale = Vector2(4.415, 4.415)
+
+[node name="Pipe22" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+position = Vector2(1208, -8528)
+rotation = 0.253073
+scale = Vector2(5.325, 5.325)
+
+[node name="Pipe23" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+position = Vector2(1016, -8664)
+rotation = 1.01404
+scale = Vector2(5.515, 5.515)
+
+[node name="RustyPipe21" parent="Obstacles" instance=ExtResource("3_2p52g")]
+position = Vector2(960, -8896)
+rotation = -1.39626
+scale = Vector2(5.44, 5.44)
+
+[node name="RustyPipe22" parent="Obstacles" instance=ExtResource("3_2p52g")]
+position = Vector2(1136, -9088)
+rotation = -0.507891
+scale = Vector2(7.915, 7.915)
+
+[node name="Pipe29" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+position = Vector2(1208, -8528)
+rotation = 0.253073
+scale = Vector2(5.325, 5.325)
+
+[node name="Pipe30" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+position = Vector2(1016, -8664)
+rotation = 1.01404
+scale = Vector2(5.515, 5.515)
+
+[node name="RustyPipe29" parent="Obstacles" instance=ExtResource("3_2p52g")]
+position = Vector2(960, -8896)
+rotation = -1.39626
+scale = Vector2(5.44, 5.44)
+
+[node name="RustyPipe30" parent="Obstacles" instance=ExtResource("3_2p52g")]
+position = Vector2(1136, -9088)
+rotation = -0.507891
+scale = Vector2(7.915, 7.915)
+
+[node name="Pipe27" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+position = Vector2(952, -10216)
+rotation = 1.64759
+scale = Vector2(5.515, 5.515)
+
+[node name="Pipe28" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+position = Vector2(824, -10032)
+rotation = 2.79078
+scale = Vector2(5.875, 5.875)
+
+[node name="Pipe31" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+position = Vector2(304, -12544)
+rotation = 3.04385
+scale = Vector2(5.875, 5.875)
+
+[node name="Pipe32" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+position = Vector2(40.0001, -12552)
+rotation = 3.29693
+scale = Vector2(5.875, 5.875)
+
+[node name="Pipe33" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+position = Vector2(608, -12976)
+rotation = 1.49924
+scale = Vector2(5.135, 5.135)
+
+[node name="Pipe34" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+position = Vector2(608, -13216)
+rotation = 1.62665
+scale = Vector2(5.25, 5.25)
+
+[node name="RustyPipe27" parent="Obstacles" instance=ExtResource("3_2p52g")]
+position = Vector2(1000, -10656)
+rotation = -1.39626
+scale = Vector2(5.44, 5.44)
+
+[node name="RustyPipe28" parent="Obstacles" instance=ExtResource("3_2p52g")]
+position = Vector2(1176, -10848)
+rotation = -0.507891
+scale = Vector2(7.915, 7.915)
+
+[node name="Rock7" parent="Obstacles" instance=ExtResource("4_rjpqi")]
+position = Vector2(544, -10040)
+scale = Vector2(3.425, 3.425)
+
+[node name="Wood8" parent="Obstacles" instance=ExtResource("5_reuwa")]
+position = Vector2(336, -9968)
+rotation = -0.760964
+scale = Vector2(3.275, 3.275)
+
+[node name="Wood9" parent="Obstacles" instance=ExtResource("5_reuwa")]
+position = Vector2(552, -10312)
+rotation = -1.90415
+scale = Vector2(3.405, 3.405)
+
+[node name="MossyWood5" parent="Obstacles" instance=ExtResource("2_vnfu7")]
+position = Vector2(584, -10544)
+rotation = -0.760964
+scale = Vector2(4.25, 4.25)
+
+[node name="Rock8" parent="Obstacles" instance=ExtResource("4_rjpqi")]
+position = Vector2(736, -10696)
+scale = Vector2(2.295, 2.295)
+
+[node name="Rock9" parent="Obstacles" instance=ExtResource("4_rjpqi")]
+position = Vector2(128, -9152)
+scale = Vector2(7.655, 7.655)
+
+[node name="Wood10" parent="Obstacles" instance=ExtResource("5_reuwa")]
+position = Vector2(784, -12728)
+rotation = -1.64934
+scale = Vector2(3.155, 3.155)
+
+[node name="Wood11" parent="Obstacles" instance=ExtResource("5_reuwa")]
+position = Vector2(776, -12880)
+rotation = -1.5708
+scale = Vector2(3.155, 3.155)
+
+[node name="Wood12" parent="Obstacles" instance=ExtResource("5_reuwa")]
+position = Vector2(792, -13280)
+rotation = -1.44339
+scale = Vector2(3.155, 3.155)
+
+[node name="MossyWood6" parent="Obstacles" instance=ExtResource("2_vnfu7")]
+position = Vector2(784, -13072)
+rotation = -1.5708
+scale = Vector2(4.005, 4.005)
+
+[node name="Wood13" parent="Obstacles" instance=ExtResource("5_reuwa")]
+position = Vector2(784, -12728)
+rotation = -1.64934
+scale = Vector2(3.155, 3.155)
+
+[node name="Wood14" parent="Obstacles" instance=ExtResource("5_reuwa")]
+position = Vector2(776, -12880)
+rotation = -1.5708
+scale = Vector2(3.155, 3.155)
+
+[node name="Wood15" parent="Obstacles" instance=ExtResource("5_reuwa")]
+position = Vector2(792, -13280)
+rotation = -1.44339
+scale = Vector2(3.155, 3.155)
+
+[node name="MossyWood7" parent="Obstacles" instance=ExtResource("2_vnfu7")]
+position = Vector2(784, -13072)
+rotation = -1.5708
+scale = Vector2(4.005, 4.005)
+
+[node name="MossyWood8" parent="Obstacles" instance=ExtResource("2_vnfu7")]
+position = Vector2(336, -14960)
+rotation = -2.96706
+scale = Vector2(4.005, 4.005)
+
+[node name="MossyWood9" parent="Obstacles" instance=ExtResource("2_vnfu7")]
+position = Vector2(112, -14976)
+rotation = -6.28319
+scale = Vector2(4.005, 4.005)
+
+[node name="Rock10" parent="Obstacles" instance=ExtResource("4_rjpqi")]
+position = Vector2(976, -12688)
+scale = Vector2(4.42, 4.42)
+
+[node name="Rock11" parent="Obstacles" instance=ExtResource("4_rjpqi")]
+position = Vector2(-40, -14016)
+scale = Vector2(6.05, 6.05)
+
+[node name="Rock12" parent="Obstacles" instance=ExtResource("4_rjpqi")]
+position = Vector2(1336, -14584)
+scale = Vector2(6.05, 6.05)
+
+[node name="RustyPipe31" parent="Obstacles" instance=ExtResource("3_2p52g")]
+position = Vector2(1232, -12664)
+rotation = 0.410152
+scale = Vector2(4.285, 4.285)
+
+[node name="RustyPipe32" parent="Obstacles" instance=ExtResource("3_2p52g")]
+position = Vector2(608, -12752)
+rotation = -1.494
+scale = Vector2(4.285, 4.285)
+
+[node name="RustyPipe34" parent="Obstacles" instance=ExtResource("3_2p52g")]
+position = Vector2(488, -13400)
+rotation = -2.50804
+scale = Vector2(6.145, 6.145)
+
+[node name="RustyPipe35" parent="Obstacles" instance=ExtResource("3_2p52g")]
+position = Vector2(232, -13472)
+rotation = -3.2149
+scale = Vector2(6.145, 6.145)
+
+[node name="RustyPipe36" parent="Obstacles" instance=ExtResource("3_2p52g")]
+position = Vector2(-15.9999, -13456)
+rotation = -3.2149
+scale = Vector2(6.145, 6.145)
+
+[node name="RustyPipe37" parent="Obstacles" instance=ExtResource("3_2p52g")]
+position = Vector2(1280, -13256)
+rotation = -3.2149
+scale = Vector2(6.145, 6.145)
+
+[node name="RustyPipe38" parent="Obstacles" instance=ExtResource("3_2p52g")]
+position = Vector2(1032, -13288)
+rotation = -2.70701
+scale = Vector2(5.48, 5.48)
+
+[node name="RustyPipe33" parent="Obstacles" instance=ExtResource("3_2p52g")]
+position = Vector2(520, -12608)
+rotation = -0.605629
+scale = Vector2(4.285, 4.285)
+
+[node name="Wood16" parent="Obstacles" instance=ExtResource("5_reuwa")]
+position = Vector2(504, -14952)
+scale = Vector2(3.435, 3.435)
+
+[node name="Wood17" parent="Obstacles" instance=ExtResource("5_reuwa")]
+position = Vector2(792, -14952)
+scale = Vector2(3.435, 3.435)
+
+[node name="Wood18" parent="Obstacles" instance=ExtResource("5_reuwa")]
+position = Vector2(952, -14960)
+rotation = -0.127409
+scale = Vector2(3.435, 3.435)
+
+[node name="Wood19" parent="Obstacles" instance=ExtResource("5_reuwa")]
+position = Vector2(1104, -14968)
+rotation = 0.253073
+scale = Vector2(3.435, 3.435)
+
+[node name="Wood20" parent="Obstacles" instance=ExtResource("5_reuwa")]
+position = Vector2(1256, -14928)
+rotation = 0.253073
+scale = Vector2(3.435, 3.435)
+
 [node name="Enemies" type="Node2D" parent="."]
 
 [node name="EnemyBubble" parent="Enemies" instance=ExtResource("1_oxvxk")]
@@ -419,12 +710,104 @@ pellet_interval = 1.5
 position = Vector2(163, -4641)
 
 [node name="EnemyBubble9" parent="Enemies" instance=ExtResource("1_oxvxk")]
-position = Vector2(621, -5697)
+position = Vector2(687, -5696)
 pellet_velocity = Vector2(250, 200)
 
 [node name="EnemyBubble10" parent="Enemies" instance=ExtResource("1_oxvxk")]
-position = Vector2(502, -5696)
+position = Vector2(568, -5695)
 scale = Vector2(-1, 1)
+pellet_velocity = Vector2(250, 200)
+
+[node name="EnemyBubble11" parent="Enemies" instance=ExtResource("1_oxvxk")]
+position = Vector2(80, -7680)
+pellet_interval = 1.5
+pellet_velocity = Vector2(250, 200)
+
+[node name="EnemyBubble13" parent="Enemies" instance=ExtResource("1_oxvxk")]
+position = Vector2(440, -8032)
+pellet_interval = 1.5
+pellet_velocity = Vector2(250, 800)
+
+[node name="EnemyBubble14" parent="Enemies" instance=ExtResource("1_oxvxk")]
+position = Vector2(184, -7936)
+pellet_interval = 1.5
+pellet_velocity = Vector2(250, 500)
+
+[node name="EnemyBubble12" parent="Enemies" instance=ExtResource("1_oxvxk")]
+position = Vector2(1136, -8336)
+scale = Vector2(-1, 1)
+pellet_interval = 1.5
+pellet_velocity = Vector2(250, 200)
+
+[node name="EnemyBubble15" parent="Enemies" instance=ExtResource("1_oxvxk")]
+position = Vector2(432, -10248)
+scale = Vector2(-1, 1)
+pellet_interval = 1.5
+pellet_velocity = Vector2(250, 200)
+
+[node name="EnemyBubble18" parent="Enemies" instance=ExtResource("1_oxvxk")]
+position = Vector2(584, -11456)
+scale = Vector2(-1, 1)
+pellet_interval = 1.5
+pellet_velocity = Vector2(250, -200)
+
+[node name="EnemyBubble16" parent="Enemies" instance=ExtResource("1_oxvxk")]
+position = Vector2(88, -10744)
+pellet_interval = 1.5
+pellet_velocity = Vector2(250, 200)
+
+[node name="EnemyBubble17" parent="Enemies" instance=ExtResource("1_oxvxk")]
+position = Vector2(704, -11456)
+pellet_interval = 1.5
+pellet_velocity = Vector2(250, 200)
+
+[node name="EnemyBubble19" parent="Enemies" instance=ExtResource("1_oxvxk")]
+position = Vector2(592, -12112)
+scale = Vector2(-1, 1)
+pellet_interval = 1.5
+pellet_velocity = Vector2(250, 200)
+
+[node name="EnemyBubble20" parent="Enemies" instance=ExtResource("1_oxvxk")]
+position = Vector2(712, -12112)
+pellet_interval = 1.5
+pellet_velocity = Vector2(250, -200)
+
+[node name="EnemyBubble21" parent="Enemies" instance=ExtResource("1_oxvxk")]
+position = Vector2(928, -12896)
+scale = Vector2(-1, 1)
+
+[node name="EnemyBubble24" parent="Enemies" instance=ExtResource("1_oxvxk")]
+position = Vector2(456, -12904)
+
+[node name="EnemyBubble23" parent="Enemies" instance=ExtResource("1_oxvxk")]
+position = Vector2(920, -13240)
+scale = Vector2(-1, 1)
+pellet_interval = 1.0
+
+[node name="EnemyBubble22" parent="Enemies" instance=ExtResource("1_oxvxk")]
+position = Vector2(464, -13256)
+pellet_interval = 1.0
+
+[node name="EnemyBubble25" parent="Enemies" instance=ExtResource("1_oxvxk")]
+position = Vector2(760, -14224)
+pellet_interval = 1.0
+pellet_velocity = Vector2(250, 200)
+
+[node name="EnemyBubble26" parent="Enemies" instance=ExtResource("1_oxvxk")]
+position = Vector2(760, -14344)
+pellet_interval = 1.0
+pellet_velocity = Vector2(250, -200)
+
+[node name="EnemyBubble27" parent="Enemies" instance=ExtResource("1_oxvxk")]
+position = Vector2(640, -14344)
+scale = Vector2(-1, 1)
+pellet_interval = 1.0
+pellet_velocity = Vector2(250, -200)
+
+[node name="EnemyBubble28" parent="Enemies" instance=ExtResource("1_oxvxk")]
+position = Vector2(640, -14216)
+scale = Vector2(-1, 1)
+pellet_interval = 1.0
 pellet_velocity = Vector2(250, 200)
 
 [node name="Pellets" type="Node2D" parent="."]
@@ -445,12 +828,7 @@ frame_progress = 1.0
 tile_map_data = PackedByteArray("AAAIACwAAAABAAEAAAAIACsAAAABAAAAAAAJACsAAAABAAEAAAAJACoAAAAAAAYAAAAKACoAAAABAAAAAAALACoAAAABAAEAAAALACkAAAAAAAYAAAANACgAAAAAAAYAAAAOACgAAAABAAAAAAAPACcAAAAAAAYAAAAQACcAAAABAAAAAAARACcAAAABAAAAAAASACcAAAABAAAAAAATACcAAAABAAEAAAATACYAAAAAAAYAAAAUACYAAAABAAAAAAAVACYAAAABAAAAAAAWACYAAAABAAAAAAAXACYAAAABAAAAAAAYACYAAAABAAAAAAAZACYAAAABAAAAAAAaACYAAAABAAAAAAAbACYAAAABAAAAAAAcACYAAAABAAAAAAAdACYAAAABAAAAAAAeACYAAAABAAAAAAAfACYAAAABAAAAAAAgACYAAAABAAAAAAAhACYAAAABAAAAAAAiACYAAAABAAAAAAAjACYAAAABAAAAAAAkACYAAAABAAAAAAAlACYAAAABAAAAAAAmACYAAAABAAAAAAAnACYAAAABAAAAAAAoACYAAAABAAAAAAApACYAAAABAAAAAAAqACYAAAABAAAAAAArACYAAAABAAAAAAAsACYAAAABAAAAAAAtACYAAAABAAAAAAAuACYAAAABAAAAAAAvACYAAAABAAAAAAAwACYAAAABAAAAAAAxACYAAAABAAAAAAAyACYAAAABAAAAAAAzACYAAAABAAAAAAA0ACYAAAABAAAAAAA1ACYAAAABAAAAAAA2ACYAAAABAAAAAAA3ACYAAAABAAAAAAA4ACYAAAABAAAAAAA5ACYAAAABAAAAAAA6ACYAAAABAAAAAAA7ACYAAAABAAAAAAA8ACYAAAABAAAAAAA9ACYAAAABAAAAAAA+ACYAAAABAAYAAAA+ACcAAAABAAEAAAA/ACcAAAABAAAAAABAACcAAAABAAYAAABAACgAAAABAAEAAABBACgAAAABAAAAAABBACkAAAABAAEAAABCACkAAAABAAEAAABDACoAAAABAAEAAABEACoAAAABAAEAAABFACoAAAABAAAAAABGACoAAAABAAAAAABHACoAAAABAAYAAABHACsAAAABAAEAAABIACsAAAABAAAAAABJACsAAAABAAYAAABKACwAAAABAAAAAABCACgAAAABAAYAAABDACkAAAABAAEAAABEACkAAAABAAYAAAAJACwAAAABAAEAAAAKACwAAAABAAEAAAALACwAAAABAAEAAAAMACwAAAABAAEAAAANACwAAAABAAEAAAAOACwAAAABAAEAAAAPACwAAAABAAEAAAAQACwAAAABAAEAAAARACwAAAABAAEAAAASACwAAAABAAEAAAATACwAAAABAAEAAAAUACwAAAABAAEAAAAVACwAAAABAAEAAAAWACwAAAABAAEAAAAXACwAAAABAAEAAAAYACwAAAABAAEAAAAZACwAAAABAAEAAAAaACwAAAABAAEAAAAbACwAAAABAAEAAAAcACwAAAABAAEAAAAdACwAAAABAAEAAAAdACsAAAABAAEAAAAeACsAAAABAAEAAAAfACsAAAABAAEAAAAgACsAAAABAAEAAAAgACwAAAABAAEAAAAhACwAAAABAAEAAAAiACwAAAABAAEAAAAjACwAAAABAAEAAAAfACwAAAABAAEAAAAeACwAAAABAAEAAAAkACwAAAABAAEAAAAlACwAAAABAAEAAAAmACwAAAABAAEAAAAnACwAAAABAAEAAAAoACwAAAABAAEAAAApACwAAAABAAEAAAAqACwAAAABAAEAAAArACwAAAABAAEAAAAsACwAAAABAAEAAAAtACwAAAABAAEAAAAuACwAAAABAAEAAAAvACwAAAABAAEAAAAwACwAAAABAAEAAAAxACwAAAABAAEAAAAyACwAAAABAAEAAAAzACwAAAABAAEAAAA0ACwAAAABAAEAAAA1ACwAAAABAAEAAAA2ACwAAAABAAEAAAA3ACwAAAABAAEAAAA4ACwAAAABAAEAAAA5ACwAAAABAAEAAAA6ACwAAAABAAEAAAA7ACwAAAABAAEAAAA8ACwAAAABAAEAAAA9ACwAAAABAAEAAAA+ACwAAAABAAEAAAA/ACwAAAABAAEAAABAACwAAAABAAEAAABBACwAAAABAAEAAABCACwAAAABAAEAAABDACwAAAABAAEAAABEACwAAAABAAEAAABFACwAAAABAAEAAABGACwAAAABAAEAAABHACwAAAABAAEAAABIACwAAAABAAEAAABJACwAAAABAAEAAAAeACgAAAABAAEAAAAeACcAAAABAAEAAAAdACcAAAABAAEAAAAcACcAAAABAAEAAAAbACcAAAABAAEAAAAaACcAAAABAAEAAAAZACcAAAABAAEAAAAYACcAAAABAAEAAAAXACcAAAABAAEAAAAWACcAAAABAAEAAAAVACcAAAABAAEAAAAUACcAAAABAAEAAAAUACgAAAABAAEAAAATACgAAAABAAEAAAASACgAAAABAAEAAAARACgAAAABAAEAAAAQACgAAAABAAEAAAAPACgAAAABAAEAAAAPACkAAAABAAEAAAAOACkAAAABAAEAAAANACkAAAABAAEAAAAMACkAAAABAAAAAAAMACoAAAABAAEAAAAMACsAAAABAAEAAAALACsAAAABAAEAAAAKACsAAAABAAEAAAANACsAAAABAAEAAAANACoAAAABAAEAAAAOACoAAAABAAEAAAAOACsAAAABAAEAAAAPACsAAAABAAEAAAAPACoAAAABAAEAAAAQACoAAAABAAEAAAAQACkAAAABAAEAAAARACkAAAABAAEAAAARACoAAAABAAEAAAARACsAAAABAAEAAAAQACsAAAABAAEAAAASACsAAAABAAEAAAASACoAAAABAAEAAAASACkAAAABAAEAAAATACkAAAABAAEAAAATACoAAAABAAEAAAATACsAAAABAAEAAAAUACsAAAABAAEAAAAUACoAAAABAAEAAAAUACkAAAABAAEAAAAVACkAAAABAAEAAAAVACgAAAABAAEAAAAWACgAAAABAAEAAAAWACkAAAABAAEAAAAWACoAAAABAAEAAAAVACoAAAABAAEAAAAVACsAAAABAAEAAAAWACsAAAABAAEAAAAXACsAAAABAAEAAAAXACoAAAABAAEAAAAXACkAAAABAAEAAAAXACgAAAABAAEAAAAYACgAAAABAAEAAAAYACkAAAABAAEAAAAYACoAAAABAAEAAAAYACsAAAABAAEAAAAZACsAAAABAAEAAAAZACoAAAABAAEAAAAZACkAAAABAAEAAAAZACgAAAABAAEAAAAaACgAAAABAAEAAAAaACkAAAABAAEAAAAaACoAAAABAAEAAAAaACsAAAABAAEAAAAbACsAAAABAAEAAAAbACoAAAABAAEAAAAbACkAAAABAAEAAAAbACgAAAABAAEAAAAcACgAAAABAAEAAAAcACkAAAABAAEAAAAcACoAAAABAAEAAAAcACsAAAABAAEAAAAdACoAAAABAAEAAAAdACkAAAABAAEAAAAdACgAAAABAAEAAAAeACkAAAABAAEAAAAeACoAAAABAAEAAAAfACoAAAABAAEAAAAfACkAAAABAAEAAAAfACgAAAABAAEAAAAfACcAAAABAAEAAAAgACcAAAABAAEAAAAgACgAAAABAAEAAAAgACkAAAABAAEAAAAgACoAAAABAAEAAAAhACoAAAABAAEAAAAhACkAAAABAAEAAAAhACgAAAABAAEAAAAhACcAAAABAAEAAAAiACcAAAABAAEAAAAiACgAAAABAAEAAAAiACkAAAABAAEAAAAiACoAAAABAAEAAAAiACsAAAABAAEAAAAhACsAAAABAAEAAAAjACsAAAABAAEAAAAjACoAAAABAAEAAAAjACkAAAABAAEAAAAjACgAAAABAAEAAAAjACcAAAABAAEAAAAkACcAAAABAAEAAAAkACgAAAABAAEAAAAkACkAAAABAAEAAAAkACoAAAABAAEAAAAkACsAAAABAAEAAAAlACsAAAABAAEAAAAlACoAAAABAAEAAAAlACkAAAABAAEAAAAlACgAAAABAAEAAAAlACcAAAABAAEAAAAmACcAAAABAAEAAAAmACgAAAABAAEAAAAmACkAAAABAAEAAAAmACoAAAABAAEAAAAmACsAAAABAAEAAAAnACsAAAABAAEAAAAnACoAAAABAAEAAAAnACkAAAABAAEAAAAnACgAAAABAAEAAAAnACcAAAABAAEAAAAoACcAAAABAAEAAAAoACgAAAABAAEAAAAoACkAAAABAAEAAAAoACoAAAABAAEAAAAoACsAAAABAAEAAAApACsAAAABAAEAAAApACoAAAABAAEAAAApACkAAAABAAEAAAApACgAAAABAAEAAAApACcAAAABAAEAAAAqACcAAAABAAEAAAAqACgAAAABAAEAAAAqACkAAAABAAEAAAAqACoAAAABAAEAAAAqACsAAAABAAEAAAArACsAAAABAAEAAAArACoAAAABAAEAAAArACkAAAABAAEAAAArACgAAAABAAEAAAArACcAAAABAAEAAAAsACcAAAABAAEAAAAsACgAAAABAAEAAAAsACkAAAABAAEAAAAsACoAAAABAAEAAAAsACsAAAABAAEAAAAtACsAAAABAAEAAAAtACoAAAABAAEAAAAtACkAAAABAAEAAAAtACgAAAABAAEAAAAtACcAAAABAAEAAAAuACcAAAABAAEAAAAuACgAAAABAAEAAAAuACkAAAABAAEAAAAuACoAAAABAAEAAAAuACsAAAABAAEAAAAvACsAAAABAAEAAAAvACoAAAABAAEAAAAvACkAAAABAAEAAAAvACgAAAABAAEAAAAvACcAAAABAAEAAAAwACcAAAABAAEAAAAwACgAAAABAAEAAAAwACkAAAABAAEAAAAwACoAAAABAAEAAAAwACsAAAABAAEAAAAxACsAAAABAAEAAAAxACoAAAABAAEAAAAxACkAAAABAAEAAAAxACgAAAABAAEAAAAxACcAAAABAAEAAAAyACcAAAABAAEAAAAyACgAAAABAAEAAAAyACkAAAABAAEAAAAyACoAAAABAAEAAAAyACsAAAABAAEAAAAzACsAAAABAAEAAAAzACoAAAABAAEAAAAzACkAAAABAAEAAAAzACgAAAABAAEAAAAzACcAAAABAAEAAAA0ACcAAAABAAEAAAA0ACgAAAABAAEAAAA0ACkAAAABAAEAAAA0ACoAAAABAAEAAAA0ACsAAAABAAEAAAA1ACsAAAABAAEAAAA1ACoAAAABAAEAAAA1ACkAAAABAAEAAAA1ACgAAAABAAEAAAA1ACcAAAABAAEAAAA2ACcAAAABAAEAAAA2ACgAAAABAAEAAAA2ACkAAAABAAEAAAA2ACoAAAABAAEAAAA2ACsAAAABAAEAAAA3ACsAAAABAAEAAAA3ACoAAAABAAEAAAA3ACkAAAABAAEAAAA3ACgAAAABAAEAAAA3ACcAAAABAAEAAAA4ACcAAAABAAEAAAA4ACgAAAABAAEAAAA4ACkAAAABAAEAAAA4ACoAAAABAAEAAAA4ACsAAAABAAEAAAA5ACsAAAABAAEAAAA5ACoAAAABAAEAAAA5ACkAAAABAAEAAAA5ACgAAAABAAEAAAA5ACcAAAABAAEAAAA6ACcAAAABAAEAAAA6ACgAAAABAAEAAAA6ACkAAAABAAEAAAA6ACoAAAABAAEAAAA6ACsAAAABAAEAAAA7ACsAAAABAAEAAAA7ACoAAAABAAEAAAA7ACkAAAABAAEAAAA7ACgAAAABAAEAAAA7ACcAAAABAAEAAAA8ACcAAAABAAEAAAA8ACgAAAABAAEAAAA8ACkAAAABAAEAAAA8ACoAAAABAAEAAAA8ACsAAAABAAEAAAA9ACsAAAABAAEAAAA9ACoAAAABAAEAAAA9ACkAAAABAAEAAAA9ACgAAAABAAEAAAA9ACcAAAABAAEAAAA+ACgAAAABAAEAAAA+ACkAAAABAAEAAAA+ACoAAAABAAEAAAA+ACsAAAABAAEAAAA/ACsAAAABAAEAAAA/ACoAAAABAAEAAAA/ACkAAAABAAEAAAA/ACgAAAABAAEAAABAACkAAAABAAEAAABAACoAAAABAAEAAABAACsAAAABAAEAAABBACsAAAABAAEAAABBACoAAAABAAEAAABCACoAAAABAAEAAABCACsAAAABAAEAAABDACsAAAABAAEAAABEACsAAAABAAEAAABFACsAAAABAAEAAABGACsAAAABAAEAAAAFACwAAAAAAAYAAAAGACwAAAABAAAAAAAHACwAAAABAAEAAAAHACsAAAAAAAYAAABLACwAAAABAAYAAAADACwAAAACAAcAAAAEACwAAAACAAcAAAAGACsAAAACAAcAAAAKACkAAAACAAcAAAAMACgAAAACAAcAAABMACwAAAAEAAcAAABKACsAAAAEAAcAAABNACwAAAAEAAcAAAAQACYAAAAEAAcAAAASACYAAAADAAcAAABDACgAAAACAAcAAABGACkAAAACAAcAAABBACcAAAACAAcAAAA/ACYAAAACAAcAAAAVACUAAAADAAcAAAAWACUAAAADAAcAAAAeACUAAAAEAAcAAAAfACUAAAADAAcAAAAgACUAAAADAAcAAAAhACUAAAAEAAcAAAAtACUAAAAEAAcAAAAuACUAAAAEAAcAAAAxACUAAAAEAAcAAAAyACUAAAACAAcAAAAzACUAAAACAAcAAAA3ACUAAAADAAcAAAA4ACUAAAADAAcAAAA5ACUAAAADAAcAAAA6ACUAAAADAAcAAAA7ACUAAAADAAcAAAAlACUAAAACAAcAAAAmACUAAAACAAcAAAAnACUAAAACAAcAAAAoACUAAAACAAcAAAAZACUAAAAEAAcAAAAaACUAAAAEAAcAAAAbACUAAAAEAAcAAAA=")
 tile_set = SubResource("TileSet_shbol")
 
-[node name="RustyPipe" parent="." instance=ExtResource("3_2p52g")]
-position = Vector2(1535, -6732)
-rotation = 0.459022
-scale = Vector2(6.93, 6.93)
-
-[node name="RustyPipe2" parent="." instance=ExtResource("3_2p52g")]
-position = Vector2(2202, -7101)
-rotation = 0.459022
-scale = Vector2(6.93, 6.93)
+[node name="Line2D" type="Line2D" parent="."]
+position = Vector2(213, -0.27832)
+scale = Vector2(0.833333, 1.00038)
+points = PackedVector2Array(1288, 720, 1290, -15010)

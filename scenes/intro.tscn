@@ -1,0 +1,42 @@
+[gd_scene load_steps=9 format=3 uid="uid://21jyk7ysntbw"]
+
+[ext_resource type="Script" path="res://scripts/intro.gd" id="1_5nhi2"]
+[ext_resource type="Texture2D" uid="uid://bjhbt0346nqju" path="res://sequences/intro1.png" id="1_kbtdl"]
+[ext_resource type="Texture2D" uid="uid://cbtv6yjy2xyww" path="res://sequences/intro2.png" id="2_6ivxm"]
+[ext_resource type="Texture2D" uid="uid://3t5gteiuqcr2" path="res://sequences/intro3.png" id="3_2f8oo"]
+[ext_resource type="Texture2D" uid="uid://ceqwpjpvo4gvb" path="res://sequences/intro4.png" id="4_l008p"]
+[ext_resource type="Texture2D" uid="uid://lppntgnwd7cx" path="res://sequences/intro5.png" id="5_wunc0"]
+[ext_resource type="Texture2D" uid="uid://d3ui775y1sb5y" path="res://sequences/intro6.png" id="6_wcv37"]
+[ext_resource type="Texture2D" uid="uid://cnhe33t66thdf" path="res://sequences/intro7.png" id="7_wncke"]
+
+[node name="Intro" type="Node2D"]
+position = Vector2(640, 360)
+script = ExtResource("1_5nhi2")
+
+[node name="1" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("1_kbtdl")
+
+[node name="2" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("2_6ivxm")
+
+[node name="3" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("3_2f8oo")
+
+[node name="4" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("4_l008p")
+
+[node name="5" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("5_wunc0")
+
+[node name="6" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("6_wcv37")
+
+[node name="7" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("7_wncke")

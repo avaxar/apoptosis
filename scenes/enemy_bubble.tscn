@@ -84,6 +84,7 @@ script = ExtResource("1_4lyxf")
 [node name="Bubble" parent="." instance=ExtResource("1_vcj8g")]
 
 [node name="Enemy" type="CharacterBody2D" parent="Bubble"]
+collision_layer = 0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Bubble/Enemy"]
 z_index = -1

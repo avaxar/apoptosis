@@ -50,7 +50,8 @@ func _process(delta: float) -> void:
 	move_and_slide()
 	
 	if last_shot < last_mouse_click:
-		var period := Time.get_unix_time_from_system() - last_mouse_click
+		last_shot = Time.get_unix_time_from_system()
+		var period := last_shot - last_mouse_click
 		if calculate_bubble_air(period) > %PlayerBubble.air:
 			shoot_bubble(get_viewport().get_mouse_position(), period)
 

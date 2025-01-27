@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dd4qmttyvqg0c"
-path="res://.godot/imported/we_had_to_sell_out.png-548acf31e491a3e303a589852564ba4d.ctex"
+uid="uid://dxvndbb6aeiwl"
+path="res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://we_had_to_sell_out.png"
-dest_files=["res://.godot/imported/we_had_to_sell_out.png-548acf31e491a3e303a589852564ba4d.ctex"]
+source_file="res://icon.png"
+dest_files=["res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex"]
 
 [params]
 

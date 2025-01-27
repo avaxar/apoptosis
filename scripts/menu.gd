@@ -1,12 +1,10 @@
 extends Control
 
+
 func _ready() -> void:
 	$MenuMusic.play()
 	$Menu.visible = false
 	$Names.visible = 0
-	
-
-
 
 
 func _on_play_pressed() -> void:

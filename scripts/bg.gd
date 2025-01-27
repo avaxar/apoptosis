@@ -34,4 +34,3 @@ func _process(_delta: float) -> void:
 		$background.position.y = -55
 	if $midground.position.y > 720:
 		$midground.position.y = -112
-		

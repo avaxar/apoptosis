@@ -24,10 +24,6 @@ var velocity: Vector2
 var player_made := false
 
 
-func _ready() -> void:
-	pass
-
-
 func _process(delta: float) -> void:
 	scale = Vector2(1.0, 1.0) * radius / 56.0 * 2.0
 

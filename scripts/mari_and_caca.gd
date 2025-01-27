@@ -1,17 +1,14 @@
 extends Node2D
 
 
-const Caca_pos = Vector2(0, 0)
-const Mari_pos = Vector2(305,300)
-
 var speed: float
 const start_speed: float = 4.0 
 const max_speed: float = 20.0 
 
 
 func start_game():
-	$caca.position = Caca_pos
-	$mari.position = Mari_pos	
+	$caca.position = Vector2(0, 0)
+	$mari.position = Vector2(305, 300)	
 	
 # Called when the node enters the scene tree for the first time.
 func _ready():

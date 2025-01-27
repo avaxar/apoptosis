@@ -1,8 +1,5 @@
 extends Node2D
 
-const Caca_pos = Vector2(0, 0)
-
-
 
 var speed: float
 const start_speed: float = 4.0 
@@ -21,9 +18,6 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	speed = start_speed
-	
-
-
 	
 	if $Caca.position.y > 350:
 		$Caca.position.y = 30

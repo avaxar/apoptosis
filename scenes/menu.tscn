@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://b8ix0al6yivd3"]
 
-[ext_resource type="Script" path="res://menu.gd" id="1_80dfj"]
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_80dfj"]
 [ext_resource type="PackedScene" uid="uid://dumiogewe3lma" path="res://scenes/background.tscn" id="2_c6qri"]
 [ext_resource type="PackedScene" uid="uid://dd1t7y1nfk702" path="res://scenes/mari_caca.tscn" id="3_b7cvj"]
 [ext_resource type="Texture2D" uid="uid://4u26scx7nldu" path="res://textures/play.png" id="3_cpfpy"]

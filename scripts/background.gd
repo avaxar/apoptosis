@@ -25,10 +25,10 @@ func _ready():
 func _process(_delta: float) -> void:
 	speed = start_speed
 	
-	$wall1.position.y += speed * 0.5
-	$wall2.position.y += speed * 0.5
-	$background2.position.y += speed *0.4
-	$midground.position.y += speed *0.3
+	$wall1.position.y += speed * 45.0 * _delta
+	$wall2.position.y += speed * 45.0 * _delta
+	$background2.position.y += speed * 30.0 * _delta
+	$midground.position.y += speed * 25.0 * _delta
 	
 	if $wall1.position.y > 1450:
 		$wall1.position.y = 30

@@ -19,8 +19,8 @@ func _ready():
 func _process(_delta: float) -> void:
 	speed = start_speed
 	
-	$caca.position.y -= speed * 0.29
-	$mari.position.y -= speed * 0.22
+	$caca.position.y -= speed * 20.0 * _delta
+	$mari.position.y -= speed * 20.0 * _delta
 
 	
 	if $caca.position.y <= -400:

@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://bhqyxj4drikjg"]
 
-[ext_resource type="Script" path="res://scripts/death.gd" id="1_6iw6m"]
-[ext_resource type="Script" path="res://scripts/margin_container.gd" id="1_bjeg8"]
+[ext_resource type="Script" uid="uid://bq614raqtwabd" path="res://scripts/death.gd" id="1_6iw6m"]
+[ext_resource type="Script" uid="uid://dlh5212lqpdu4" path="res://scripts/margin_container.gd" id="1_bjeg8"]
 [ext_resource type="Texture2D" uid="uid://4u26scx7nldu" path="res://textures/play.png" id="2_6j7cv"]
 [ext_resource type="Texture2D" uid="uid://dx3sdxi3au87n" path="res://textures/game_over.png" id="4_i2j25"]
 [ext_resource type="Texture2D" uid="uid://vdqccrb1uxu3" path="res://textures/menu.png" id="4_nae67"]

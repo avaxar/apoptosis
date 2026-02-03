@@ -32,10 +32,9 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	#air = sin(Time.get_ticks_msec() / 1000.0) * 50.0 + 50.0;
-
 	tiles.position.y = radius
 	sprite.scale = Vector2(1.0, 1.0) * radius / 56.0 * 2.0
-	
+
 	if popped:
 		velocity.y += 50.0 * delta
 	elif air < 0.0 or air > 100.0:
@@ -54,7 +53,7 @@ func _process(delta: float) -> void:
 		if position.x + radius > RIGHT_WALL:
 			velocity.x *= -1
 			position.x = RIGHT_WALL - radius
-		
+
 		if not popped:
 			const UPPER_WALL := 0.0
 			if position.y - radius < UPPER_WALL:
@@ -76,14 +75,14 @@ func pop() -> void:
 	if popped:
 		return
 	$Pop.play()
-	
+
 
 	set_deferred("monitoring", false)
 	set_deferred("monitorable", false)
 	sprite.play("pop")
 	rot_velocity = (randf() - 0.5) * PI
 	popped = true
-	
+
 	if self == get_node_or_null("%PlayerBubble"):
 		%Player.call_deferred("reparent", get_parent())
 	elif get_node_or_null("Enemy"):

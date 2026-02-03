@@ -1,4 +1,13 @@
+*.tmp
+exports/windows/*
+!exports/windows/.gitkeep
+exports/linux/*
+!exports/linux/.gitkeep
+exports/web/*
+!exports/web/.gitkeep
+
 # Godot 4+ specific ignores
 .godot/
 /android/
-/export/
+
+.vscode/

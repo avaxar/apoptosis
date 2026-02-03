@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=4 uid="uid://bjp7lcojflgop"]
+[gd_scene format=4 uid="uid://bjp7lcojflgop"]
 
 [ext_resource type="Script" uid="uid://bffcpa2yxve8m" path="res://scripts/bubble.gd" id="1_0o17j"]
 [ext_resource type="Texture2D" uid="uid://dels2kvj0jjw2" path="res://textures/tilemap.png" id="2_pm753"]
@@ -240,26 +240,26 @@ animations = [{
 "speed": 15.0
 }]
 
-[node name="Bubble" type="Area2D"]
+[node name="Bubble" type="Area2D" unique_id=1821715840]
 script = ExtResource("1_0o17j")
 
-[node name="Sphere" type="CollisionShape2D" parent="."]
+[node name="Sphere" type="CollisionShape2D" parent="." unique_id=1438801901]
 shape = SubResource("CircleShape2D_ga5j5")
 
-[node name="Tiles" type="Node2D" parent="."]
+[node name="Tiles" type="Node2D" parent="." unique_id=603460802]
 position = Vector2(0, 50)
 
-[node name="TileMap" type="TileMapLayer" parent="Tiles"]
+[node name="TileMap" type="TileMapLayer" parent="Tiles" unique_id=670310151]
 tile_map_data = PackedByteArray("AAD9//7/AAAAAAYAAAD+//3/AAACAAcAAAD+//7/AAABAAAAAAD+////AAABAAEAAAD///3/AAADAAcAAAD///7/AAABAAAAAAD/////AAABAAEAAAAAAP3/AAADAAcAAAAAAP7/AAABAAAAAAAAAP//AAABAAEAAAABAP3/AAAEAAcAAAABAP7/AAABAAAAAAABAP//AAABAAEAAAACAP7/AAABAAYAAAD9////AAAAAAcAAAD+/wAAAAAAAAcAAAD//wAAAAABAAIAAAAAAAAAAAABAAIAAAABAAAAAAABAAcAAAACAP//AAABAAcAAAA=")
 tile_set = SubResource("TileSet_xjacc")
 
-[node name="Sprite" type="AnimatedSprite2D" parent="."]
+[node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=544782186]
 scale = Vector2(2, 1.968)
 sprite_frames = SubResource("SpriteFrames_tpimy")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="Pop" type="AudioStreamPlayer" parent="."]
+[node name="Pop" type="AudioStreamPlayer" parent="." unique_id=90207316]
 stream = ExtResource("5_8v42t")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

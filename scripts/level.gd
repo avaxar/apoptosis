@@ -40,7 +40,7 @@ func _process(delta: float) -> void:
 												 clamp((%PlayerBubble.air - air_deduction) / 100.0, 0.0, 1.0))
 
 	%Map.position.y = progression / 100.0 * map_size
-	
+
 	if %Player.global_position.y >= 720:
 		var x: float = ((%Player.global_position.y - 720.0) / 144.0)
 		if x <= 0.8:

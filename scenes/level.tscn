@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://40mtfiq51p3d"]
+[gd_scene format=3 uid="uid://40mtfiq51p3d"]
 
 [ext_resource type="PackedScene" uid="uid://bjp7lcojflgop" path="res://scenes/bubble.tscn" id="1_83uus"]
 [ext_resource type="Script" uid="uid://6stmrq1v7kx" path="res://scripts/level.gd" id="1_hl4t3"]
@@ -37,80 +37,80 @@ fog_height_density = 1.8042
 volumetric_fog_density = 0.4675
 volumetric_fog_emission_energy = 1024.0
 
-[node name="Level" type="Node2D"]
+[node name="Level" type="Node2D" unique_id=1029133501]
 script = ExtResource("1_hl4t3")
 
-[node name="Background" parent="." instance=ExtResource("5_aievo")]
+[node name="Background" parent="." unique_id=1694585579 instance=ExtResource("5_aievo")]
 z_index = -4096
 
-[node name="PlayerBubble" parent="." instance=ExtResource("1_83uus")]
+[node name="PlayerBubble" parent="." unique_id=38112688 instance=ExtResource("1_83uus")]
 unique_name_in_owner = true
 position = Vector2(640, 528)
 
-[node name="Player" parent="PlayerBubble" instance=ExtResource("2_w7c3h")]
+[node name="Player" parent="PlayerBubble" unique_id=124503841 instance=ExtResource("2_w7c3h")]
 unique_name_in_owner = true
 z_index = -1
 position = Vector2(0, -8)
 collision_layer = 0
 
-[node name="Pellets" type="Node2D" parent="."]
+[node name="Pellets" type="Node2D" parent="." unique_id=1513720607]
 unique_name_in_owner = true
 
-[node name="Map" parent="." instance=ExtResource("5_tljte")]
+[node name="Map" parent="." unique_id=1699289048 instance=ExtResource("5_tljte")]
 unique_name_in_owner = true
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=215210042]
 
-[node name="Cursor" type="Sprite2D" parent="CanvasLayer"]
+[node name="Cursor" type="Sprite2D" parent="CanvasLayer" unique_id=1299829405]
 unique_name_in_owner = true
 position = Vector2(-97, -81)
 texture = ExtResource("3_fmf4g")
 script = ExtResource("4_mx8sn")
 
-[node name="Barometer" type="Sprite2D" parent="CanvasLayer"]
+[node name="Barometer" type="Sprite2D" parent="CanvasLayer" unique_id=2042009972]
 unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.803922)
 position = Vector2(72, 648)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("8_ufp8b")
 
-[node name="Arrow" type="Sprite2D" parent="CanvasLayer/Barometer"]
+[node name="Arrow" type="Sprite2D" parent="CanvasLayer/Barometer" unique_id=1414957712]
 position = Vector2(0, -4.76837e-07)
 rotation = -2.46091
 texture = ExtResource("9_7woni")
 offset = Vector2(0.5, -4.5)
 
-[node name="HeightBar" type="Node2D" parent="CanvasLayer"]
+[node name="HeightBar" type="Node2D" parent="CanvasLayer" unique_id=626434192]
 unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0.501961)
 
-[node name="Bar" type="Sprite2D" parent="CanvasLayer/HeightBar"]
+[node name="Bar" type="Sprite2D" parent="CanvasLayer/HeightBar" unique_id=1738245796]
 position = Vector2(1240, 360)
 scale = Vector2(-1, 0.95)
 texture = ExtResource("7_akayg")
 
-[node name="Mari" type="Sprite2D" parent="CanvasLayer/HeightBar"]
+[node name="Mari" type="Sprite2D" parent="CanvasLayer/HeightBar" unique_id=277676466]
 position = Vector2(1192, 32)
 texture = ExtResource("8_aa6sx")
 
-[node name="Caca" type="Sprite2D" parent="CanvasLayer/HeightBar"]
+[node name="Caca" type="Sprite2D" parent="CanvasLayer/HeightBar" unique_id=438178578]
 position = Vector2(1192, 32)
 texture = ExtResource("10_pd17x")
 
-[node name="FillColor" type="MeshInstance2D" parent="CanvasLayer"]
+[node name="FillColor" type="MeshInstance2D" parent="CanvasLayer" unique_id=813827511]
 unique_name_in_owner = true
 modulate = Color(1, 1, 1, 0)
 z_index = 4096
 position = Vector2(640, 360)
 mesh = SubResource("QuadMesh_ri7t0")
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1439697401]
 unique_name_in_owner = true
 environment = SubResource("Environment_mx8sn")
 
-[node name="Music" type="AudioStreamPlayer" parent="."]
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=1065489529]
 stream = ExtResource("11_nfnki")
 volume_db = -13.117
 
-[node name="Crumbling" type="AudioStreamPlayer" parent="."]
+[node name="Crumbling" type="AudioStreamPlayer" parent="." unique_id=263135393]
 stream = ExtResource("14_p8h00")

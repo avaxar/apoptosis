@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=4 uid="uid://dseix45i1xgtx"]
+[gd_scene format=4 uid="uid://dseix45i1xgtx"]
 
 [ext_resource type="PackedScene" uid="uid://byftm7ey4ra7g" path="res://scenes/obstacles/pipe.tscn" id="1_m1jmc"]
 [ext_resource type="PackedScene" uid="uid://dq37o2n0pe38a" path="res://scenes/enemy_bubble.tscn" id="1_oxvxk"]
@@ -126,673 +126,672 @@ texture = ExtResource("2_vjioo")
 [sub_resource type="TileSet" id="TileSet_shbol"]
 sources/0 = SubResource("TileSetAtlasSource_wapj8")
 
-[node name="Map" type="Node2D"]
+[node name="Map" type="Node2D" unique_id=1198460468]
 
-[node name="Obstacles" type="Node2D" parent="."]
+[node name="Obstacles" type="Node2D" parent="." unique_id=1227357674]
 
-[node name="Pipe" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe" parent="Obstacles" unique_id=1798981309 instance=ExtResource("1_m1jmc")]
 position = Vector2(457, 147)
 rotation = 0.380482
 scale = Vector2(2.82, 2.82)
 
-[node name="MossyWood" parent="Obstacles" instance=ExtResource("2_vnfu7")]
+[node name="MossyWood" parent="Obstacles" unique_id=1245343829 instance=ExtResource("2_vnfu7")]
 position = Vector2(794, -151)
 rotation = -0.253073
 scale = Vector2(2.935, 2.935)
 
-[node name="RustyPipe" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe" parent="Obstacles" unique_id=1842588235 instance=ExtResource("3_2p52g")]
 position = Vector2(364, 50)
 rotation = 1.14319
 scale = Vector2(3.365, 3.365)
 
-[node name="Pipe2" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe2" parent="Obstacles" unique_id=1057668447 instance=ExtResource("1_m1jmc")]
 position = Vector2(260, -40)
 rotation = 0.253073
 scale = Vector2(3.2, 3.2)
 
-[node name="Pipe3" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe3" parent="Obstacles" unique_id=1402317861 instance=ExtResource("1_m1jmc")]
 position = Vector2(92, -62)
 scale = Vector2(3.93, 3.93)
 
-[node name="Rock" parent="Obstacles" instance=ExtResource("4_rjpqi")]
+[node name="Rock" parent="Obstacles" unique_id=1127483526 instance=ExtResource("4_rjpqi")]
 position = Vector2(359, -595)
 rotation = 0.380482
 scale = Vector2(1.22, 1.22)
 
-[node name="Rock2" parent="Obstacles" instance=ExtResource("4_rjpqi")]
+[node name="Rock2" parent="Obstacles" unique_id=854252549 instance=ExtResource("4_rjpqi")]
 position = Vector2(756, -731)
 scale = Vector2(2.07, 2.07)
 
-[node name="MossyWood2" parent="Obstacles" instance=ExtResource("2_vnfu7")]
+[node name="MossyWood2" parent="Obstacles" unique_id=1136553284 instance=ExtResource("2_vnfu7")]
 position = Vector2(530, -605)
 rotation = 0.253073
 scale = Vector2(3.965, 3.965)
 
-[node name="Wood" parent="Obstacles" instance=ExtResource("5_reuwa")]
+[node name="Wood" parent="Obstacles" unique_id=1565243726 instance=ExtResource("5_reuwa")]
 position = Vector2(617, -728)
 rotation = -1.52367
 scale = Vector2(1.83, 1.83)
 
-[node name="RustyPipe2" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe2" parent="Obstacles" unique_id=1326879043 instance=ExtResource("3_2p52g")]
 position = Vector2(1254, -2300)
 rotation = -0.127409
 scale = Vector2(5.165, 5.165)
 
-[node name="Pipe4" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe4" parent="Obstacles" unique_id=1739765028 instance=ExtResource("1_m1jmc")]
 position = Vector2(796, -2290)
 rotation = 0.253073
 scale = Vector2(3.49, 3.49)
 
-[node name="RustyPipe3" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe3" parent="Obstacles" unique_id=305923392 instance=ExtResource("3_2p52g")]
 position = Vector2(632, -2276)
 rotation = -0.380482
 scale = Vector2(3.96, 3.96)
 
-[node name="Pipe5" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe5" parent="Obstacles" unique_id=1099746834 instance=ExtResource("1_m1jmc")]
 position = Vector2(443, -2231)
 rotation = -0.125664
 scale = Vector2(4.685, 4.685)
 
-[node name="Pipe6" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe6" parent="Obstacles" unique_id=276002609 instance=ExtResource("1_m1jmc")]
 position = Vector2(242, -2261)
 rotation = 0.380482
 scale = Vector2(4.435, 4.435)
 
-[node name="RustyPipe4" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe4" parent="Obstacles" unique_id=1015277856 instance=ExtResource("3_2p52g")]
 position = Vector2(20, -2303)
 scale = Vector2(5.405, 5.405)
 
-[node name="RustyPipe7" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe7" parent="Obstacles" unique_id=1090178341 instance=ExtResource("3_2p52g")]
 position = Vector2(867, -6409)
 rotation = -0.127409
 scale = Vector2(5.165, 5.165)
 
-[node name="Pipe7" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe7" parent="Obstacles" unique_id=1263029466 instance=ExtResource("1_m1jmc")]
 position = Vector2(409, -6399)
 rotation = 0.253073
 scale = Vector2(3.49, 3.49)
 
-[node name="RustyPipe8" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe8" parent="Obstacles" unique_id=972472395 instance=ExtResource("3_2p52g")]
 position = Vector2(245, -6385)
 rotation = -0.380482
 scale = Vector2(3.96, 3.96)
 
-[node name="Pipe8" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe8" parent="Obstacles" unique_id=1113698285 instance=ExtResource("1_m1jmc")]
 position = Vector2(55.9999, -6340)
 rotation = -0.125664
 scale = Vector2(4.685, 4.685)
 
-[node name="Pipe9" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe9" parent="Obstacles" unique_id=481689795 instance=ExtResource("1_m1jmc")]
 position = Vector2(-145, -6370)
 rotation = 0.380482
 scale = Vector2(4.435, 4.435)
 
-[node name="RustyPipe9" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe9" parent="Obstacles" unique_id=2083232625 instance=ExtResource("3_2p52g")]
 position = Vector2(-367, -6412)
 scale = Vector2(5.405, 5.405)
 
-[node name="Rock3" parent="Obstacles" instance=ExtResource("4_rjpqi")]
+[node name="Rock3" parent="Obstacles" unique_id=1101039920 instance=ExtResource("4_rjpqi")]
 position = Vector2(1310, -857)
 rotation = 1.14319
 scale = Vector2(3.26, 3.26)
 
-[node name="RustyPipe5" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe5" parent="Obstacles" unique_id=155017975 instance=ExtResource("3_2p52g")]
 position = Vector2(1429, -3562)
 rotation = -3.04734
 scale = Vector2(5.45, 5.45)
 
-[node name="RustyPipe6" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe6" parent="Obstacles" unique_id=1393078014 instance=ExtResource("3_2p52g")]
 position = Vector2(1197, -3511)
 rotation = -0.633555
 scale = Vector2(5.82, 5.82)
 
-[node name="Wood2" parent="Obstacles" instance=ExtResource("5_reuwa")]
+[node name="Wood2" parent="Obstacles" unique_id=1658620734 instance=ExtResource("5_reuwa")]
 position = Vector2(882, -3133)
 rotation = -1.52367
 scale = Vector2(4.04, 4.04)
 
-[node name="MossyWood3" parent="Obstacles" instance=ExtResource("2_vnfu7")]
+[node name="MossyWood3" parent="Obstacles" unique_id=691839744 instance=ExtResource("2_vnfu7")]
 position = Vector2(531, -2926)
 rotation = 0.380482
 scale = Vector2(3.99, 3.99)
 
-[node name="Rock4" parent="Obstacles" instance=ExtResource("4_rjpqi")]
+[node name="Rock4" parent="Obstacles" unique_id=1451429473 instance=ExtResource("4_rjpqi")]
 position = Vector2(130, -2941)
 rotation = -0.322886
 scale = Vector2(2.71, 2.71)
 
-[node name="Rock5" parent="Obstacles" instance=ExtResource("4_rjpqi")]
+[node name="Rock5" parent="Obstacles" unique_id=240072346 instance=ExtResource("4_rjpqi")]
 position = Vector2(298, -3141)
 scale = Vector2(1.3, 1.3)
 
-[node name="Wood3" parent="Obstacles" instance=ExtResource("5_reuwa")]
+[node name="Wood3" parent="Obstacles" unique_id=893381127 instance=ExtResource("5_reuwa")]
 position = Vector2(775, -3205)
 rotation = -0.380482
-scale = Vector2(1, 1)
 
-[node name="MossyWood4" parent="Obstacles" instance=ExtResource("2_vnfu7")]
+[node name="MossyWood4" parent="Obstacles" unique_id=261099440 instance=ExtResource("2_vnfu7")]
 position = Vector2(679, -3071)
 rotation = -1.01578
 scale = Vector2(2.42, 2.42)
 
-[node name="Wood4" parent="Obstacles" instance=ExtResource("5_reuwa")]
+[node name="Wood4" parent="Obstacles" unique_id=47688793 instance=ExtResource("5_reuwa")]
 position = Vector2(1288, -4560)
 rotation = 0.888373
 scale = Vector2(5.045, 5.045)
 
-[node name="Rock6" parent="Obstacles" instance=ExtResource("4_rjpqi")]
+[node name="Rock6" parent="Obstacles" unique_id=847410094 instance=ExtResource("4_rjpqi")]
 position = Vector2(623, -5510)
 scale = Vector2(3.615, 3.615)
 
-[node name="RustyPipe10" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe10" parent="Obstacles" unique_id=1699756105 instance=ExtResource("3_2p52g")]
 position = Vector2(1092, -6411)
 rotation = 0.127409
 scale = Vector2(4.415, 4.415)
 
-[node name="Pipe10" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe10" parent="Obstacles" unique_id=1087216015 instance=ExtResource("1_m1jmc")]
 position = Vector2(1299, -6417)
 rotation = -0.254818
 scale = Vector2(4.62, 4.62)
 
-[node name="Pipe11" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe11" parent="Obstacles" unique_id=65905408 instance=ExtResource("1_m1jmc")]
 position = Vector2(1543, -6437)
 scale = Vector2(6.235, 6.235)
 
-[node name="RustyPipe11" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe11" parent="Obstacles" unique_id=1984912018 instance=ExtResource("3_2p52g")]
 position = Vector2(562, -6779)
 rotation = -0.127409
 scale = Vector2(5.165, 5.165)
 
-[node name="Pipe12" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe12" parent="Obstacles" unique_id=1781585073 instance=ExtResource("1_m1jmc")]
 position = Vector2(104, -6769)
 rotation = 0.253073
 scale = Vector2(3.49, 3.49)
 
-[node name="RustyPipe12" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe12" parent="Obstacles" unique_id=2086726777 instance=ExtResource("3_2p52g")]
 position = Vector2(-60, -6755)
 rotation = -0.380482
 scale = Vector2(3.96, 3.96)
 
-[node name="Pipe13" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe13" parent="Obstacles" unique_id=650334902 instance=ExtResource("1_m1jmc")]
 position = Vector2(-249, -6710)
 rotation = -0.125664
 scale = Vector2(4.685, 4.685)
 
-[node name="Pipe14" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe14" parent="Obstacles" unique_id=708012867 instance=ExtResource("1_m1jmc")]
 position = Vector2(-450, -6740)
 rotation = 0.380482
 scale = Vector2(4.435, 4.435)
 
-[node name="RustyPipe13" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe13" parent="Obstacles" unique_id=1802485045 instance=ExtResource("3_2p52g")]
 position = Vector2(-672, -6782)
 scale = Vector2(5.405, 5.405)
 
-[node name="RustyPipe14" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe14" parent="Obstacles" unique_id=1161708462 instance=ExtResource("3_2p52g")]
 position = Vector2(787, -6781)
 rotation = 0.127409
 scale = Vector2(4.415, 4.415)
 
-[node name="Pipe15" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe15" parent="Obstacles" unique_id=688857250 instance=ExtResource("1_m1jmc")]
 position = Vector2(994, -6787)
 rotation = -0.254818
 scale = Vector2(4.62, 4.62)
 
-[node name="Pipe16" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe16" parent="Obstacles" unique_id=1331942432 instance=ExtResource("1_m1jmc")]
 position = Vector2(1238, -6807)
 scale = Vector2(6.235, 6.235)
 
-[node name="RustyPipe15" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe15" parent="Obstacles" unique_id=647712083 instance=ExtResource("3_2p52g")]
 position = Vector2(1229, -7148)
 rotation = -0.127409
 scale = Vector2(5.165, 5.165)
 
-[node name="Pipe17" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe17" parent="Obstacles" unique_id=1452303171 instance=ExtResource("1_m1jmc")]
 position = Vector2(771, -7138)
 rotation = 0.253073
 scale = Vector2(3.49, 3.49)
 
-[node name="RustyPipe16" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe16" parent="Obstacles" unique_id=973865400 instance=ExtResource("3_2p52g")]
 position = Vector2(607, -7124)
 rotation = -0.380482
 scale = Vector2(3.96, 3.96)
 
-[node name="Pipe18" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe18" parent="Obstacles" unique_id=1745338633 instance=ExtResource("1_m1jmc")]
 position = Vector2(418, -7079)
 rotation = -0.125664
 scale = Vector2(4.685, 4.685)
 
-[node name="Pipe19" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe19" parent="Obstacles" unique_id=1169015021 instance=ExtResource("1_m1jmc")]
 position = Vector2(217, -7109)
 rotation = 0.380482
 scale = Vector2(4.435, 4.435)
 
-[node name="RustyPipe17" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe17" parent="Obstacles" unique_id=863790225 instance=ExtResource("3_2p52g")]
 position = Vector2(-5, -7151)
 scale = Vector2(5.405, 5.405)
 
-[node name="RustyPipe18" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe18" parent="Obstacles" unique_id=272415264 instance=ExtResource("3_2p52g")]
 position = Vector2(1454, -7150)
 rotation = 0.127409
 scale = Vector2(4.415, 4.415)
 
-[node name="Pipe20" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe20" parent="Obstacles" unique_id=1302378055 instance=ExtResource("1_m1jmc")]
 position = Vector2(1661, -7156)
 rotation = -0.254818
 scale = Vector2(4.62, 4.62)
 
-[node name="Pipe21" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe21" parent="Obstacles" unique_id=272386058 instance=ExtResource("1_m1jmc")]
 position = Vector2(1905, -7176)
 scale = Vector2(6.235, 6.235)
 
-[node name="Wood5" parent="Obstacles" instance=ExtResource("5_reuwa")]
+[node name="Wood5" parent="Obstacles" unique_id=1738977639 instance=ExtResource("5_reuwa")]
 position = Vector2(648, -8096)
 rotation = 1.2706
 scale = Vector2(4, 4)
 
-[node name="Wood6" parent="Obstacles" instance=ExtResource("5_reuwa")]
+[node name="Wood6" parent="Obstacles" unique_id=445117816 instance=ExtResource("5_reuwa")]
 position = Vector2(656, -8544)
 rotation = 1.77849
 scale = Vector2(4, 4)
 
-[node name="Wood7" parent="Obstacles" instance=ExtResource("5_reuwa")]
+[node name="Wood7" parent="Obstacles" unique_id=99509884 instance=ExtResource("5_reuwa")]
 position = Vector2(776, -8688)
 rotation = 3.55524
 scale = Vector2(4, 4)
 
-[node name="RustyPipe19" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe19" parent="Obstacles" unique_id=2083962519 instance=ExtResource("3_2p52g")]
 position = Vector2(1535, -6732)
 rotation = 0.459022
 scale = Vector2(6.93, 6.93)
 
-[node name="RustyPipe20" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe20" parent="Obstacles" unique_id=1270445755 instance=ExtResource("3_2p52g")]
 position = Vector2(2202, -7101)
 rotation = 0.459022
 scale = Vector2(6.93, 6.93)
 
-[node name="RustyPipe23" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe23" parent="Obstacles" unique_id=764725871 instance=ExtResource("3_2p52g")]
 position = Vector2(1090, -9612)
 rotation = -0.127409
 scale = Vector2(5.165, 5.165)
 
-[node name="Pipe24" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe24" parent="Obstacles" unique_id=344588378 instance=ExtResource("1_m1jmc")]
 position = Vector2(632, -9602)
 rotation = 0.253073
 scale = Vector2(3.49, 3.49)
 
-[node name="RustyPipe24" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe24" parent="Obstacles" unique_id=1058451227 instance=ExtResource("3_2p52g")]
 position = Vector2(468, -9588)
 rotation = -0.380482
 scale = Vector2(3.96, 3.96)
 
-[node name="Pipe25" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe25" parent="Obstacles" unique_id=478505750 instance=ExtResource("1_m1jmc")]
 position = Vector2(279, -9543)
 rotation = -0.125664
 scale = Vector2(4.685, 4.685)
 
-[node name="Pipe26" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe26" parent="Obstacles" unique_id=1587993763 instance=ExtResource("1_m1jmc")]
 position = Vector2(78.0001, -9573)
 rotation = 0.380482
 scale = Vector2(4.435, 4.435)
 
-[node name="RustyPipe25" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe25" parent="Obstacles" unique_id=1284049823 instance=ExtResource("3_2p52g")]
 position = Vector2(-144, -9615)
 scale = Vector2(5.405, 5.405)
 
-[node name="RustyPipe26" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe26" parent="Obstacles" unique_id=2087449106 instance=ExtResource("3_2p52g")]
 position = Vector2(1315, -9614)
 rotation = 0.127409
 scale = Vector2(4.415, 4.415)
 
-[node name="Pipe22" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe22" parent="Obstacles" unique_id=1001216729 instance=ExtResource("1_m1jmc")]
 position = Vector2(1208, -8528)
 rotation = 0.253073
 scale = Vector2(5.325, 5.325)
 
-[node name="Pipe23" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe23" parent="Obstacles" unique_id=1482651991 instance=ExtResource("1_m1jmc")]
 position = Vector2(1016, -8664)
 rotation = 1.01404
 scale = Vector2(5.515, 5.515)
 
-[node name="RustyPipe21" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe21" parent="Obstacles" unique_id=1126800712 instance=ExtResource("3_2p52g")]
 position = Vector2(960, -8896)
 rotation = -1.39626
 scale = Vector2(5.44, 5.44)
 
-[node name="RustyPipe22" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe22" parent="Obstacles" unique_id=1377250573 instance=ExtResource("3_2p52g")]
 position = Vector2(1136, -9088)
 rotation = -0.507891
 scale = Vector2(7.915, 7.915)
 
-[node name="Pipe29" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe29" parent="Obstacles" unique_id=2118265979 instance=ExtResource("1_m1jmc")]
 position = Vector2(1208, -8528)
 rotation = 0.253073
 scale = Vector2(5.325, 5.325)
 
-[node name="Pipe30" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe30" parent="Obstacles" unique_id=675477987 instance=ExtResource("1_m1jmc")]
 position = Vector2(1016, -8664)
 rotation = 1.01404
 scale = Vector2(5.515, 5.515)
 
-[node name="RustyPipe29" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe29" parent="Obstacles" unique_id=372780566 instance=ExtResource("3_2p52g")]
 position = Vector2(960, -8896)
 rotation = -1.39626
 scale = Vector2(5.44, 5.44)
 
-[node name="RustyPipe30" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe30" parent="Obstacles" unique_id=1896425213 instance=ExtResource("3_2p52g")]
 position = Vector2(1136, -9088)
 rotation = -0.507891
 scale = Vector2(7.915, 7.915)
 
-[node name="Pipe27" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe27" parent="Obstacles" unique_id=2144400114 instance=ExtResource("1_m1jmc")]
 position = Vector2(952, -10216)
 rotation = 1.64759
 scale = Vector2(5.515, 5.515)
 
-[node name="Pipe28" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe28" parent="Obstacles" unique_id=1218026355 instance=ExtResource("1_m1jmc")]
 position = Vector2(824, -10032)
 rotation = 2.79078
 scale = Vector2(5.875, 5.875)
 
-[node name="Pipe31" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe31" parent="Obstacles" unique_id=268971975 instance=ExtResource("1_m1jmc")]
 position = Vector2(304, -12544)
 rotation = 3.04385
 scale = Vector2(5.875, 5.875)
 
-[node name="Pipe32" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe32" parent="Obstacles" unique_id=122747596 instance=ExtResource("1_m1jmc")]
 position = Vector2(40.0001, -12552)
 rotation = 3.29693
 scale = Vector2(5.875, 5.875)
 
-[node name="Pipe33" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe33" parent="Obstacles" unique_id=1566161264 instance=ExtResource("1_m1jmc")]
 position = Vector2(576, -12976)
 rotation = 1.49924
 scale = Vector2(5.135, 5.135)
 
-[node name="Pipe34" parent="Obstacles" instance=ExtResource("1_m1jmc")]
+[node name="Pipe34" parent="Obstacles" unique_id=1631952624 instance=ExtResource("1_m1jmc")]
 position = Vector2(568, -13216)
 rotation = 1.62665
 scale = Vector2(5.25, 5.25)
 
-[node name="RustyPipe27" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe27" parent="Obstacles" unique_id=847425427 instance=ExtResource("3_2p52g")]
 position = Vector2(1000, -10656)
 rotation = -1.39626
 scale = Vector2(5.44, 5.44)
 
-[node name="RustyPipe28" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe28" parent="Obstacles" unique_id=1493664123 instance=ExtResource("3_2p52g")]
 position = Vector2(1176, -10848)
 rotation = -0.507891
 scale = Vector2(7.915, 7.915)
 
-[node name="Rock7" parent="Obstacles" instance=ExtResource("4_rjpqi")]
+[node name="Rock7" parent="Obstacles" unique_id=1968615576 instance=ExtResource("4_rjpqi")]
 position = Vector2(544, -10040)
 scale = Vector2(3.425, 3.425)
 
-[node name="Wood8" parent="Obstacles" instance=ExtResource("5_reuwa")]
+[node name="Wood8" parent="Obstacles" unique_id=101701557 instance=ExtResource("5_reuwa")]
 position = Vector2(336, -9968)
 rotation = -0.760964
 scale = Vector2(3.275, 3.275)
 
-[node name="Wood9" parent="Obstacles" instance=ExtResource("5_reuwa")]
+[node name="Wood9" parent="Obstacles" unique_id=1129371461 instance=ExtResource("5_reuwa")]
 position = Vector2(552, -10312)
 rotation = -1.90415
 scale = Vector2(3.405, 3.405)
 
-[node name="MossyWood5" parent="Obstacles" instance=ExtResource("2_vnfu7")]
+[node name="MossyWood5" parent="Obstacles" unique_id=1542427872 instance=ExtResource("2_vnfu7")]
 position = Vector2(584, -10544)
 rotation = -0.760964
 scale = Vector2(4.25, 4.25)
 
-[node name="Rock8" parent="Obstacles" instance=ExtResource("4_rjpqi")]
+[node name="Rock8" parent="Obstacles" unique_id=915958320 instance=ExtResource("4_rjpqi")]
 position = Vector2(736, -10696)
 scale = Vector2(2.295, 2.295)
 
-[node name="Rock9" parent="Obstacles" instance=ExtResource("4_rjpqi")]
+[node name="Rock9" parent="Obstacles" unique_id=1075896993 instance=ExtResource("4_rjpqi")]
 position = Vector2(128, -9152)
 scale = Vector2(7.655, 7.655)
 
-[node name="Wood13" parent="Obstacles" instance=ExtResource("5_reuwa")]
+[node name="Wood13" parent="Obstacles" unique_id=186990887 instance=ExtResource("5_reuwa")]
 position = Vector2(816, -12704)
 rotation = -1.64934
 scale = Vector2(3.155, 3.155)
 
-[node name="Wood14" parent="Obstacles" instance=ExtResource("5_reuwa")]
+[node name="Wood14" parent="Obstacles" unique_id=2109462517 instance=ExtResource("5_reuwa")]
 position = Vector2(816, -12880)
 rotation = -1.5708
 scale = Vector2(3.155, 3.155)
 
-[node name="Wood15" parent="Obstacles" instance=ExtResource("5_reuwa")]
+[node name="Wood15" parent="Obstacles" unique_id=1567168152 instance=ExtResource("5_reuwa")]
 position = Vector2(824, -13256)
 rotation = -1.44339
 scale = Vector2(3.155, 3.155)
 
-[node name="MossyWood7" parent="Obstacles" instance=ExtResource("2_vnfu7")]
+[node name="MossyWood7" parent="Obstacles" unique_id=23122374 instance=ExtResource("2_vnfu7")]
 position = Vector2(816, -13072)
 rotation = -1.5708
 scale = Vector2(4.005, 4.005)
 
-[node name="MossyWood8" parent="Obstacles" instance=ExtResource("2_vnfu7")]
+[node name="MossyWood8" parent="Obstacles" unique_id=2100344823 instance=ExtResource("2_vnfu7")]
 position = Vector2(280, -14520)
 rotation = -2.96706
 scale = Vector2(4.005, 4.005)
 
-[node name="MossyWood9" parent="Obstacles" instance=ExtResource("2_vnfu7")]
+[node name="MossyWood9" parent="Obstacles" unique_id=1353832356 instance=ExtResource("2_vnfu7")]
 position = Vector2(80, -14536)
 rotation = -6.28319
 scale = Vector2(4.005, 4.005)
 
-[node name="Rock10" parent="Obstacles" instance=ExtResource("4_rjpqi")]
+[node name="Rock10" parent="Obstacles" unique_id=327454347 instance=ExtResource("4_rjpqi")]
 position = Vector2(976, -12688)
 scale = Vector2(4.42, 4.42)
 
-[node name="Rock11" parent="Obstacles" instance=ExtResource("4_rjpqi")]
+[node name="Rock11" parent="Obstacles" unique_id=1974080958 instance=ExtResource("4_rjpqi")]
 position = Vector2(-40, -14016)
 scale = Vector2(6.05, 6.05)
 
-[node name="RustyPipe31" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe31" parent="Obstacles" unique_id=1879881727 instance=ExtResource("3_2p52g")]
 position = Vector2(1232, -12664)
 rotation = 0.410152
 scale = Vector2(4.285, 4.285)
 
-[node name="RustyPipe32" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe32" parent="Obstacles" unique_id=1551501 instance=ExtResource("3_2p52g")]
 position = Vector2(576, -12752)
 rotation = -1.494
 scale = Vector2(4.285, 4.285)
 
-[node name="RustyPipe34" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe34" parent="Obstacles" unique_id=445954523 instance=ExtResource("3_2p52g")]
 position = Vector2(472, -13408)
 rotation = -2.50804
 scale = Vector2(6.145, 6.145)
 
-[node name="RustyPipe35" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe35" parent="Obstacles" unique_id=995317498 instance=ExtResource("3_2p52g")]
 position = Vector2(232, -13472)
 rotation = -3.2149
 scale = Vector2(6.145, 6.145)
 
-[node name="RustyPipe36" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe36" parent="Obstacles" unique_id=1583282222 instance=ExtResource("3_2p52g")]
 position = Vector2(-15.9999, -13456)
 rotation = -3.2149
 scale = Vector2(6.145, 6.145)
 
-[node name="RustyPipe37" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe37" parent="Obstacles" unique_id=1898312572 instance=ExtResource("3_2p52g")]
 position = Vector2(1280, -13256)
 rotation = -3.2149
 scale = Vector2(6.145, 6.145)
 
-[node name="RustyPipe38" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe38" parent="Obstacles" unique_id=799800363 instance=ExtResource("3_2p52g")]
 position = Vector2(1032, -13288)
 rotation = -2.70701
 scale = Vector2(5.48, 5.48)
 
-[node name="RustyPipe33" parent="Obstacles" instance=ExtResource("3_2p52g")]
+[node name="RustyPipe33" parent="Obstacles" unique_id=574763004 instance=ExtResource("3_2p52g")]
 position = Vector2(480, -12608)
 rotation = -0.605629
 scale = Vector2(4.285, 4.285)
 
-[node name="Wood16" parent="Obstacles" instance=ExtResource("5_reuwa")]
+[node name="Wood16" parent="Obstacles" unique_id=625200745 instance=ExtResource("5_reuwa")]
 position = Vector2(432, -14504)
 scale = Vector2(3.435, 3.435)
 
-[node name="Wood17" parent="Obstacles" instance=ExtResource("5_reuwa")]
+[node name="Wood17" parent="Obstacles" unique_id=2045275394 instance=ExtResource("5_reuwa")]
 position = Vector2(800, -14504)
 scale = Vector2(3.435, 3.435)
 
-[node name="Wood18" parent="Obstacles" instance=ExtResource("5_reuwa")]
+[node name="Wood18" parent="Obstacles" unique_id=1240285019 instance=ExtResource("5_reuwa")]
 position = Vector2(920, -14520)
 rotation = -0.127409
 scale = Vector2(3.435, 3.435)
 
-[node name="Wood19" parent="Obstacles" instance=ExtResource("5_reuwa")]
+[node name="Wood19" parent="Obstacles" unique_id=2068392384 instance=ExtResource("5_reuwa")]
 position = Vector2(1072, -14528)
 rotation = 0.253073
 scale = Vector2(3.435, 3.435)
 
-[node name="Wood20" parent="Obstacles" instance=ExtResource("5_reuwa")]
+[node name="Wood20" parent="Obstacles" unique_id=613420446 instance=ExtResource("5_reuwa")]
 position = Vector2(1224, -14488)
 rotation = 0.253073
 scale = Vector2(3.435, 3.435)
 
-[node name="Enemies" type="Node2D" parent="."]
+[node name="Enemies" type="Node2D" parent="." unique_id=238042660]
 
-[node name="EnemyBubble" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble" parent="Enemies" unique_id=1177827778 instance=ExtResource("1_oxvxk")]
 position = Vector2(133, 184)
 pellet_interval = 1.5
 pellet_velocity = Vector2(250, 200)
 
-[node name="EnemyBubble2" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble2" parent="Enemies" unique_id=1804806369 instance=ExtResource("1_oxvxk")]
 position = Vector2(178, -1652)
 pellet_interval = 1.0
 
-[node name="EnemyBubble4" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble4" parent="Enemies" unique_id=2048120900 instance=ExtResource("1_oxvxk")]
 position = Vector2(1057, -1650)
 scale = Vector2(-1, 1)
 pellet_interval = 1.0
 
-[node name="EnemyBubble5" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble5" parent="Enemies" unique_id=1031063935 instance=ExtResource("1_oxvxk")]
 position = Vector2(1060, -434)
 scale = Vector2(-1, 1)
 init_air = 40.0
 pellet_interval = 2.5
 pellet_velocity = Vector2(250, 1000)
 
-[node name="EnemyBubble6" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble6" parent="Enemies" unique_id=611621934 instance=ExtResource("1_oxvxk")]
 position = Vector2(165, -4295)
 pellet_interval = 1.0
 
-[node name="EnemyBubble7" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble7" parent="Enemies" unique_id=1968158067 instance=ExtResource("1_oxvxk")]
 position = Vector2(163, -4464)
 pellet_interval = 1.5
 
-[node name="EnemyBubble8" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble8" parent="Enemies" unique_id=1014053969 instance=ExtResource("1_oxvxk")]
 position = Vector2(163, -4641)
 
-[node name="EnemyBubble9" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble9" parent="Enemies" unique_id=105128663 instance=ExtResource("1_oxvxk")]
 position = Vector2(687, -5696)
 pellet_velocity = Vector2(250, 200)
 
-[node name="EnemyBubble10" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble10" parent="Enemies" unique_id=6947660 instance=ExtResource("1_oxvxk")]
 position = Vector2(568, -5695)
 scale = Vector2(-1, 1)
 pellet_velocity = Vector2(250, 200)
 
-[node name="EnemyBubble11" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble11" parent="Enemies" unique_id=58005223 instance=ExtResource("1_oxvxk")]
 position = Vector2(80, -7680)
 pellet_interval = 1.5
 pellet_velocity = Vector2(250, 200)
 
-[node name="EnemyBubble13" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble13" parent="Enemies" unique_id=2023651534 instance=ExtResource("1_oxvxk")]
 position = Vector2(440, -8032)
 pellet_interval = 1.5
 pellet_velocity = Vector2(250, 800)
 
-[node name="EnemyBubble14" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble14" parent="Enemies" unique_id=341704938 instance=ExtResource("1_oxvxk")]
 position = Vector2(184, -7936)
 pellet_interval = 1.5
 pellet_velocity = Vector2(250, 500)
 
-[node name="EnemyBubble12" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble12" parent="Enemies" unique_id=684929972 instance=ExtResource("1_oxvxk")]
 position = Vector2(1136, -8336)
 scale = Vector2(-1, 1)
 pellet_interval = 1.5
 pellet_velocity = Vector2(250, 200)
 
-[node name="EnemyBubble15" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble15" parent="Enemies" unique_id=1546198505 instance=ExtResource("1_oxvxk")]
 position = Vector2(432, -10248)
 scale = Vector2(-1, 1)
 pellet_interval = 1.5
 pellet_velocity = Vector2(250, 200)
 
-[node name="EnemyBubble18" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble18" parent="Enemies" unique_id=149205955 instance=ExtResource("1_oxvxk")]
 position = Vector2(584, -11456)
 scale = Vector2(-1, 1)
 pellet_interval = 1.5
 pellet_velocity = Vector2(250, -200)
 
-[node name="EnemyBubble16" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble16" parent="Enemies" unique_id=38077626 instance=ExtResource("1_oxvxk")]
 position = Vector2(88, -10744)
 pellet_interval = 1.5
 pellet_velocity = Vector2(250, 200)
 
-[node name="EnemyBubble17" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble17" parent="Enemies" unique_id=19312370 instance=ExtResource("1_oxvxk")]
 position = Vector2(704, -11456)
 pellet_interval = 1.5
 pellet_velocity = Vector2(250, 200)
 
-[node name="EnemyBubble19" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble19" parent="Enemies" unique_id=1156956242 instance=ExtResource("1_oxvxk")]
 position = Vector2(592, -12112)
 scale = Vector2(-1, 1)
 pellet_interval = 1.5
 pellet_velocity = Vector2(250, 200)
 
-[node name="EnemyBubble20" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble20" parent="Enemies" unique_id=535690556 instance=ExtResource("1_oxvxk")]
 position = Vector2(712, -12112)
 pellet_interval = 1.5
 pellet_velocity = Vector2(250, -200)
 
-[node name="EnemyBubble21" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble21" parent="Enemies" unique_id=1627054157 instance=ExtResource("1_oxvxk")]
 position = Vector2(936, -12912)
 scale = Vector2(-1, 1)
 
-[node name="EnemyBubble24" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble24" parent="Enemies" unique_id=8830851 instance=ExtResource("1_oxvxk")]
 position = Vector2(456, -12904)
 
-[node name="EnemyBubble23" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble23" parent="Enemies" unique_id=1141534079 instance=ExtResource("1_oxvxk")]
 position = Vector2(920, -13240)
 scale = Vector2(-1, 1)
 pellet_interval = 1.0
 
-[node name="EnemyBubble22" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble22" parent="Enemies" unique_id=703670490 instance=ExtResource("1_oxvxk")]
 position = Vector2(464, -13256)
 pellet_interval = 1.0
 
-[node name="EnemyBubble25" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble25" parent="Enemies" unique_id=2027200555 instance=ExtResource("1_oxvxk")]
 position = Vector2(72, -14344)
 pellet_interval = 1.0
 pellet_velocity = Vector2(250, 200)
 
-[node name="EnemyBubble26" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble26" parent="Enemies" unique_id=2050559704 instance=ExtResource("1_oxvxk")]
 position = Vector2(80, -13680)
 pellet_interval = 1.0
 pellet_velocity = Vector2(250, -200)
 
-[node name="EnemyBubble27" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble27" parent="Enemies" unique_id=31376760 instance=ExtResource("1_oxvxk")]
 position = Vector2(1208, -13664)
 scale = Vector2(-1, 1)
 pellet_interval = 1.0
 pellet_velocity = Vector2(250, -200)
 
-[node name="EnemyBubble28" parent="Enemies" instance=ExtResource("1_oxvxk")]
+[node name="EnemyBubble28" parent="Enemies" unique_id=842452841 instance=ExtResource("1_oxvxk")]
 position = Vector2(1208, -14360)
 scale = Vector2(-1, 1)
 pellet_interval = 1.0
 pellet_velocity = Vector2(250, 200)
 
-[node name="Pellets" type="Node2D" parent="."]
+[node name="Pellets" type="Node2D" parent="." unique_id=494057641]
 unique_name_in_owner = true
 
-[node name="Background" type="Node2D" parent="."]
+[node name="Background" type="Node2D" parent="." unique_id=430448574]
 z_index = 123
 
-[node name="Pendopo" type="AnimatedSprite2D" parent="Background"]
+[node name="Pendopo" type="AnimatedSprite2D" parent="Background" unique_id=114946945]
 position = Vector2(664, 496)
 scale = Vector2(1.15306, 1.15306)
 sprite_frames = SubResource("SpriteFrames_37squ")
@@ -800,11 +799,11 @@ autoplay = "default"
 frame = 6
 frame_progress = 1.0
 
-[node name="TileMapLayer" type="TileMapLayer" parent="Background"]
+[node name="TileMapLayer" type="TileMapLayer" parent="Background" unique_id=6136948]
 tile_map_data = PackedByteArray("AAAIACwAAAABAAEAAAAIACsAAAABAAAAAAAJACsAAAABAAEAAAAJACoAAAAAAAYAAAAKACoAAAABAAAAAAALACoAAAABAAEAAAALACkAAAAAAAYAAAANACgAAAAAAAYAAAAOACgAAAABAAAAAAAPACcAAAAAAAYAAAAQACcAAAABAAAAAAARACcAAAABAAAAAAASACcAAAABAAAAAAATACcAAAABAAEAAAATACYAAAAAAAYAAAAUACYAAAABAAAAAAAVACYAAAABAAAAAAAWACYAAAABAAAAAAAXACYAAAABAAAAAAAYACYAAAABAAAAAAAZACYAAAABAAAAAAAaACYAAAABAAAAAAAbACYAAAABAAAAAAAcACYAAAABAAAAAAAdACYAAAABAAAAAAAeACYAAAABAAAAAAAfACYAAAABAAAAAAAgACYAAAABAAAAAAAhACYAAAABAAAAAAAiACYAAAABAAAAAAAjACYAAAABAAAAAAAkACYAAAABAAAAAAAlACYAAAABAAAAAAAmACYAAAABAAAAAAAnACYAAAABAAAAAAAoACYAAAABAAAAAAApACYAAAABAAAAAAAqACYAAAABAAAAAAArACYAAAABAAAAAAAsACYAAAABAAAAAAAtACYAAAABAAAAAAAuACYAAAABAAAAAAAvACYAAAABAAAAAAAwACYAAAABAAAAAAAxACYAAAABAAAAAAAyACYAAAABAAAAAAAzACYAAAABAAAAAAA0ACYAAAABAAAAAAA1ACYAAAABAAAAAAA2ACYAAAABAAAAAAA3ACYAAAABAAAAAAA4ACYAAAABAAAAAAA5ACYAAAABAAAAAAA6ACYAAAABAAAAAAA7ACYAAAABAAAAAAA8ACYAAAABAAAAAAA9ACYAAAABAAAAAAA+ACYAAAABAAYAAAA+ACcAAAABAAEAAAA/ACcAAAABAAAAAABAACcAAAABAAYAAABAACgAAAABAAEAAABBACgAAAABAAAAAABBACkAAAABAAEAAABCACkAAAABAAEAAABDACoAAAABAAEAAABEACoAAAABAAEAAABFACoAAAABAAAAAABGACoAAAABAAAAAABHACoAAAABAAYAAABHACsAAAABAAEAAABIACsAAAABAAAAAABJACsAAAABAAYAAABKACwAAAABAAAAAABCACgAAAABAAYAAABDACkAAAABAAEAAABEACkAAAABAAYAAAAJACwAAAABAAEAAAAKACwAAAABAAEAAAALACwAAAABAAEAAAAMACwAAAABAAEAAAANACwAAAABAAEAAAAOACwAAAABAAEAAAAPACwAAAABAAEAAAAQACwAAAABAAEAAAARACwAAAABAAEAAAASACwAAAABAAEAAAATACwAAAABAAEAAAAUACwAAAABAAEAAAAVACwAAAABAAEAAAAWACwAAAABAAEAAAAXACwAAAABAAEAAAAYACwAAAABAAEAAAAZACwAAAABAAEAAAAaACwAAAABAAEAAAAbACwAAAABAAEAAAAcACwAAAABAAEAAAAdACwAAAABAAEAAAAdACsAAAABAAEAAAAeACsAAAABAAEAAAAfACsAAAABAAEAAAAgACsAAAABAAEAAAAgACwAAAABAAEAAAAhACwAAAABAAEAAAAiACwAAAABAAEAAAAjACwAAAABAAEAAAAfACwAAAABAAEAAAAeACwAAAABAAEAAAAkACwAAAABAAEAAAAlACwAAAABAAEAAAAmACwAAAABAAEAAAAnACwAAAABAAEAAAAoACwAAAABAAEAAAApACwAAAABAAEAAAAqACwAAAABAAEAAAArACwAAAABAAEAAAAsACwAAAABAAEAAAAtACwAAAABAAEAAAAuACwAAAABAAEAAAAvACwAAAABAAEAAAAwACwAAAABAAEAAAAxACwAAAABAAEAAAAyACwAAAABAAEAAAAzACwAAAABAAEAAAA0ACwAAAABAAEAAAA1ACwAAAABAAEAAAA2ACwAAAABAAEAAAA3ACwAAAABAAEAAAA4ACwAAAABAAEAAAA5ACwAAAABAAEAAAA6ACwAAAABAAEAAAA7ACwAAAABAAEAAAA8ACwAAAABAAEAAAA9ACwAAAABAAEAAAA+ACwAAAABAAEAAAA/ACwAAAABAAEAAABAACwAAAABAAEAAABBACwAAAABAAEAAABCACwAAAABAAEAAABDACwAAAABAAEAAABEACwAAAABAAEAAABFACwAAAABAAEAAABGACwAAAABAAEAAABHACwAAAABAAEAAABIACwAAAABAAEAAABJACwAAAABAAEAAAAeACgAAAABAAEAAAAeACcAAAABAAEAAAAdACcAAAABAAEAAAAcACcAAAABAAEAAAAbACcAAAABAAEAAAAaACcAAAABAAEAAAAZACcAAAABAAEAAAAYACcAAAABAAEAAAAXACcAAAABAAEAAAAWACcAAAABAAEAAAAVACcAAAABAAEAAAAUACcAAAABAAEAAAAUACgAAAABAAEAAAATACgAAAABAAEAAAASACgAAAABAAEAAAARACgAAAABAAEAAAAQACgAAAABAAEAAAAPACgAAAABAAEAAAAPACkAAAABAAEAAAAOACkAAAABAAEAAAANACkAAAABAAEAAAAMACkAAAABAAAAAAAMACoAAAABAAEAAAAMACsAAAABAAEAAAALACsAAAABAAEAAAAKACsAAAABAAEAAAANACsAAAABAAEAAAANACoAAAABAAEAAAAOACoAAAABAAEAAAAOACsAAAABAAEAAAAPACsAAAABAAEAAAAPACoAAAABAAEAAAAQACoAAAABAAEAAAAQACkAAAABAAEAAAARACkAAAABAAEAAAARACoAAAABAAEAAAARACsAAAABAAEAAAAQACsAAAABAAEAAAASACsAAAABAAEAAAASACoAAAABAAEAAAASACkAAAABAAEAAAATACkAAAABAAEAAAATACoAAAABAAEAAAATACsAAAABAAEAAAAUACsAAAABAAEAAAAUACoAAAABAAEAAAAUACkAAAABAAEAAAAVACkAAAABAAEAAAAVACgAAAABAAEAAAAWACgAAAABAAEAAAAWACkAAAABAAEAAAAWACoAAAABAAEAAAAVACoAAAABAAEAAAAVACsAAAABAAEAAAAWACsAAAABAAEAAAAXACsAAAABAAEAAAAXACoAAAABAAEAAAAXACkAAAABAAEAAAAXACgAAAABAAEAAAAYACgAAAABAAEAAAAYACkAAAABAAEAAAAYACoAAAABAAEAAAAYACsAAAABAAEAAAAZACsAAAABAAEAAAAZACoAAAABAAEAAAAZACkAAAABAAEAAAAZACgAAAABAAEAAAAaACgAAAABAAEAAAAaACkAAAABAAEAAAAaACoAAAABAAEAAAAaACsAAAABAAEAAAAbACsAAAABAAEAAAAbACoAAAABAAEAAAAbACkAAAABAAEAAAAbACgAAAABAAEAAAAcACgAAAABAAEAAAAcACkAAAABAAEAAAAcACoAAAABAAEAAAAcACsAAAABAAEAAAAdACoAAAABAAEAAAAdACkAAAABAAEAAAAdACgAAAABAAEAAAAeACkAAAABAAEAAAAeACoAAAABAAEAAAAfACoAAAABAAEAAAAfACkAAAABAAEAAAAfACgAAAABAAEAAAAfACcAAAABAAEAAAAgACcAAAABAAEAAAAgACgAAAABAAEAAAAgACkAAAABAAEAAAAgACoAAAABAAEAAAAhACoAAAABAAEAAAAhACkAAAABAAEAAAAhACgAAAABAAEAAAAhACcAAAABAAEAAAAiACcAAAABAAEAAAAiACgAAAABAAEAAAAiACkAAAABAAEAAAAiACoAAAABAAEAAAAiACsAAAABAAEAAAAhACsAAAABAAEAAAAjACsAAAABAAEAAAAjACoAAAABAAEAAAAjACkAAAABAAEAAAAjACgAAAABAAEAAAAjACcAAAABAAEAAAAkACcAAAABAAEAAAAkACgAAAABAAEAAAAkACkAAAABAAEAAAAkACoAAAABAAEAAAAkACsAAAABAAEAAAAlACsAAAABAAEAAAAlACoAAAABAAEAAAAlACkAAAABAAEAAAAlACgAAAABAAEAAAAlACcAAAABAAEAAAAmACcAAAABAAEAAAAmACgAAAABAAEAAAAmACkAAAABAAEAAAAmACoAAAABAAEAAAAmACsAAAABAAEAAAAnACsAAAABAAEAAAAnACoAAAABAAEAAAAnACkAAAABAAEAAAAnACgAAAABAAEAAAAnACcAAAABAAEAAAAoACcAAAABAAEAAAAoACgAAAABAAEAAAAoACkAAAABAAEAAAAoACoAAAABAAEAAAAoACsAAAABAAEAAAApACsAAAABAAEAAAApACoAAAABAAEAAAApACkAAAABAAEAAAApACgAAAABAAEAAAApACcAAAABAAEAAAAqACcAAAABAAEAAAAqACgAAAABAAEAAAAqACkAAAABAAEAAAAqACoAAAABAAEAAAAqACsAAAABAAEAAAArACsAAAABAAEAAAArACoAAAABAAEAAAArACkAAAABAAEAAAArACgAAAABAAEAAAArACcAAAABAAEAAAAsACcAAAABAAEAAAAsACgAAAABAAEAAAAsACkAAAABAAEAAAAsACoAAAABAAEAAAAsACsAAAABAAEAAAAtACsAAAABAAEAAAAtACoAAAABAAEAAAAtACkAAAABAAEAAAAtACgAAAABAAEAAAAtACcAAAABAAEAAAAuACcAAAABAAEAAAAuACgAAAABAAEAAAAuACkAAAABAAEAAAAuACoAAAABAAEAAAAuACsAAAABAAEAAAAvACsAAAABAAEAAAAvACoAAAABAAEAAAAvACkAAAABAAEAAAAvACgAAAABAAEAAAAvACcAAAABAAEAAAAwACcAAAABAAEAAAAwACgAAAABAAEAAAAwACkAAAABAAEAAAAwACoAAAABAAEAAAAwACsAAAABAAEAAAAxACsAAAABAAEAAAAxACoAAAABAAEAAAAxACkAAAABAAEAAAAxACgAAAABAAEAAAAxACcAAAABAAEAAAAyACcAAAABAAEAAAAyACgAAAABAAEAAAAyACkAAAABAAEAAAAyACoAAAABAAEAAAAyACsAAAABAAEAAAAzACsAAAABAAEAAAAzACoAAAABAAEAAAAzACkAAAABAAEAAAAzACgAAAABAAEAAAAzACcAAAABAAEAAAA0ACcAAAABAAEAAAA0ACgAAAABAAEAAAA0ACkAAAABAAEAAAA0ACoAAAABAAEAAAA0ACsAAAABAAEAAAA1ACsAAAABAAEAAAA1ACoAAAABAAEAAAA1ACkAAAABAAEAAAA1ACgAAAABAAEAAAA1ACcAAAABAAEAAAA2ACcAAAABAAEAAAA2ACgAAAABAAEAAAA2ACkAAAABAAEAAAA2ACoAAAABAAEAAAA2ACsAAAABAAEAAAA3ACsAAAABAAEAAAA3ACoAAAABAAEAAAA3ACkAAAABAAEAAAA3ACgAAAABAAEAAAA3ACcAAAABAAEAAAA4ACcAAAABAAEAAAA4ACgAAAABAAEAAAA4ACkAAAABAAEAAAA4ACoAAAABAAEAAAA4ACsAAAABAAEAAAA5ACsAAAABAAEAAAA5ACoAAAABAAEAAAA5ACkAAAABAAEAAAA5ACgAAAABAAEAAAA5ACcAAAABAAEAAAA6ACcAAAABAAEAAAA6ACgAAAABAAEAAAA6ACkAAAABAAEAAAA6ACoAAAABAAEAAAA6ACsAAAABAAEAAAA7ACsAAAABAAEAAAA7ACoAAAABAAEAAAA7ACkAAAABAAEAAAA7ACgAAAABAAEAAAA7ACcAAAABAAEAAAA8ACcAAAABAAEAAAA8ACgAAAABAAEAAAA8ACkAAAABAAEAAAA8ACoAAAABAAEAAAA8ACsAAAABAAEAAAA9ACsAAAABAAEAAAA9ACoAAAABAAEAAAA9ACkAAAABAAEAAAA9ACgAAAABAAEAAAA9ACcAAAABAAEAAAA+ACgAAAABAAEAAAA+ACkAAAABAAEAAAA+ACoAAAABAAEAAAA+ACsAAAABAAEAAAA/ACsAAAABAAEAAAA/ACoAAAABAAEAAAA/ACkAAAABAAEAAAA/ACgAAAABAAEAAABAACkAAAABAAEAAABAACoAAAABAAEAAABAACsAAAABAAEAAABBACsAAAABAAEAAABBACoAAAABAAEAAABCACoAAAABAAEAAABCACsAAAABAAEAAABDACsAAAABAAEAAABEACsAAAABAAEAAABFACsAAAABAAEAAABGACsAAAABAAEAAAAFACwAAAAAAAYAAAAGACwAAAABAAAAAAAHACwAAAABAAEAAAAHACsAAAAAAAYAAABLACwAAAABAAYAAAADACwAAAACAAcAAAAEACwAAAACAAcAAAAGACsAAAACAAcAAAAKACkAAAACAAcAAAAMACgAAAACAAcAAABMACwAAAAEAAcAAABKACsAAAAEAAcAAABNACwAAAAEAAcAAAAQACYAAAAEAAcAAAASACYAAAADAAcAAABDACgAAAACAAcAAABGACkAAAACAAcAAABBACcAAAACAAcAAAA/ACYAAAACAAcAAAAVACUAAAADAAcAAAAWACUAAAADAAcAAAAeACUAAAAEAAcAAAAfACUAAAADAAcAAAAgACUAAAADAAcAAAAhACUAAAAEAAcAAAAtACUAAAAEAAcAAAAuACUAAAAEAAcAAAAxACUAAAAEAAcAAAAyACUAAAACAAcAAAAzACUAAAACAAcAAAA3ACUAAAADAAcAAAA4ACUAAAADAAcAAAA5ACUAAAADAAcAAAA6ACUAAAADAAcAAAA7ACUAAAADAAcAAAAlACUAAAACAAcAAAAmACUAAAACAAcAAAAnACUAAAACAAcAAAAoACUAAAACAAcAAAAZACUAAAAEAAcAAAAaACUAAAAEAAcAAAAbACUAAAAEAAcAAAA=")
 tile_set = SubResource("TileSet_shbol")
 
-[node name="Line2D" type="Line2D" parent="."]
+[node name="Line2D" type="Line2D" parent="." unique_id=1356910879]
 position = Vector2(213, -0.27832)
 scale = Vector2(0.833333, 1.00038)
 points = PackedVector2Array(1288, 720, 1290, -15010)

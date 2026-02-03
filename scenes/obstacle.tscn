@@ -1,18 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://ciq61o63jc8e7"]
+[gd_scene format=3 uid="uid://ciq61o63jc8e7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_43pay"]
 size = Vector2(52.2946, 52.241)
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" unique_id=1600724367]
 
-[node name="StaticBody2D" type="Area2D" parent="."]
+[node name="StaticBody2D" type="Area2D" parent="." unique_id=680963759]
 disable_mode = 1
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=985445540]
 position = Vector2(288, 272)
 scale = Vector2(3.05959, 3.06273)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1421528597]
 position = Vector2(288, 280)
 scale = Vector2(3.05959, 3.06273)
 shape = SubResource("RectangleShape2D_43pay")

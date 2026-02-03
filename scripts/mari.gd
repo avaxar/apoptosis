@@ -2,8 +2,8 @@ extends Node2D
 
 
 var speed: float
-const start_speed: float = 4.0 
-const max_speed: float = 20.0 
+const start_speed: float = 4.0
+const max_speed: float = 20.0
 
 
 func start_game():

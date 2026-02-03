@@ -27,7 +27,7 @@ func face(direction: int) -> void:
 func _process(delta: float) -> void:
 	if %PlayerBubble.popped:
 		collision.disabled = true
-	
+
 	if is_on_floor():
 		if Input.is_action_just_pressed("jump"):
 			velocity.y -= JUMP_VEL
@@ -48,7 +48,7 @@ func _process(delta: float) -> void:
 			face(-1)
 
 	move_and_slide()
-	
+
 	if last_shot < last_mouse_click:
 		last_shot = Time.get_unix_time_from_system()
 		var period := last_shot - last_mouse_click

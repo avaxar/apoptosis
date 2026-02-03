@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://21jyk7ysntbw"]
+[gd_scene format=3 uid="uid://21jyk7ysntbw"]
 
 [ext_resource type="Script" uid="uid://bnurdmusasty4" path="res://scripts/intro.gd" id="1_5nhi2"]
 [ext_resource type="Texture2D" uid="uid://bjhbt0346nqju" path="res://sequences/intro1.png" id="1_kbtdl"]
@@ -32,39 +32,39 @@ animations = [{
 "speed": 2.0
 }]
 
-[node name="Intro" type="Node2D"]
+[node name="Intro" type="Node2D" unique_id=706163060]
 position = Vector2(640, 360)
 script = ExtResource("1_5nhi2")
 
-[node name="1" type="Sprite2D" parent="."]
+[node name="1" type="Sprite2D" parent="." unique_id=200912582]
 modulate = Color(1, 1, 1, 0)
 texture = ExtResource("1_kbtdl")
 
-[node name="2" type="Sprite2D" parent="."]
+[node name="2" type="Sprite2D" parent="." unique_id=196477986]
 modulate = Color(1, 1, 1, 0)
 texture = ExtResource("2_6ivxm")
 
-[node name="3" type="Sprite2D" parent="."]
+[node name="3" type="Sprite2D" parent="." unique_id=474964174]
 modulate = Color(1, 1, 1, 0)
 texture = ExtResource("3_2f8oo")
 
-[node name="4" type="Sprite2D" parent="."]
+[node name="4" type="Sprite2D" parent="." unique_id=966167079]
 modulate = Color(1, 1, 1, 0)
 texture = ExtResource("4_l008p")
 
-[node name="5" type="Sprite2D" parent="."]
+[node name="5" type="Sprite2D" parent="." unique_id=210733820]
 modulate = Color(1, 1, 1, 0)
 texture = ExtResource("5_wunc0")
 
-[node name="6" type="Sprite2D" parent="."]
+[node name="6" type="Sprite2D" parent="." unique_id=1678168916]
 modulate = Color(1, 1, 1, 0)
 texture = ExtResource("6_wcv37")
 
-[node name="7" type="Sprite2D" parent="."]
+[node name="7" type="Sprite2D" parent="." unique_id=1147607932]
 modulate = Color(1, 1, 1, 0)
 texture = ExtResource("7_wncke")
 
-[node name="8" type="AnimatedSprite2D" parent="."]
+[node name="8" type="AnimatedSprite2D" parent="." unique_id=266325262]
 modulate = Color(1, 1, 1, 0)
 position = Vector2(544, 304)
 scale = Vector2(4.25, 4.25)

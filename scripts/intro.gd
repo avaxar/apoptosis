@@ -4,7 +4,7 @@ extends Node2D
 var time := 0.0
 func _process(delta: float) -> void:
 	time += delta
-	
+
 	# I HAVE NO IDEA HOW TO USE ANIMATION PLAYERS
 	for i in range(1, 9):
 		var frame := get_node(str(i))

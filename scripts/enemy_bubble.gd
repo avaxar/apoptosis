@@ -14,7 +14,7 @@ extends Node2D
 func _ready() -> void:
 	bubble.air = init_air
 	timer.wait_time = pellet_interval
-	
+
 	var color := randi_range(0b001, 0b111)
 	const COLOR_FACTOR := 0.45
 	enemy.modulate = Color((color & 0b001) * COLOR_FACTOR,
@@ -27,7 +27,7 @@ func _process(delta: float) -> void:
 		const GRAVITY := 60.0
 		enemy.velocity.y += GRAVITY * delta;
 	enemy.move_and_slide()
-	
+
 	if bubble.popped:
 		timer.stop()
 

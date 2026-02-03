@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://igicjarc0hwh"]
+[gd_scene format=3 uid="uid://igicjarc0hwh"]
 
 [ext_resource type="Texture2D" uid="uid://el777tmqy4d8" path="res://textures/bubble_idle.png" id="3_2vnut"]
 [ext_resource type="Script" uid="uid://df0fy86ag2pe0" path="res://scripts/pellet.gd" id="3_imiex"]
@@ -126,18 +126,18 @@ animations = [{
 resource_local_to_scene = true
 radius = 27.1662
 
-[node name="Pellet" type="AnimatedSprite2D"]
+[node name="Pellet" type="AnimatedSprite2D" unique_id=1734192951]
 sprite_frames = SubResource("SpriteFrames_3niya")
 animation = &"idle"
 autoplay = "idle"
 script = ExtResource("3_imiex")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="." unique_id=1810496993]
 
-[node name="Sphere" type="CollisionShape2D" parent="Area2D"]
+[node name="Sphere" type="CollisionShape2D" parent="Area2D" unique_id=783517939]
 shape = SubResource("CircleShape2D_ga5j5")
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Timer" type="Timer" parent="." unique_id=547261785]
 one_shot = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://dd1t7y1nfk702"]
+[gd_scene format=3 uid="uid://dd1t7y1nfk702"]
 
 [ext_resource type="Script" uid="uid://dad74kedc7nje" path="res://scripts/mari_and_caca.gd" id="1_aqhai"]
 [ext_resource type="Texture2D" uid="uid://bvf3g8cyl08vg" path="res://textures/caca_idle.png" id="2_c57cj"]
@@ -173,37 +173,37 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="mari and caca" type="Node2D"]
+[node name="mari and caca" type="Node2D" unique_id=409878003]
 script = ExtResource("1_aqhai")
 
-[node name="caca" type="Area2D" parent="."]
+[node name="caca" type="Area2D" parent="." unique_id=724512625]
 position = Vector2(20, 26)
 scale = Vector2(1.39315, 1.36819)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="caca"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="caca" unique_id=2083925764]
 position = Vector2(235, 225)
 scale = Vector2(1.715, 1.715)
 sprite_frames = SubResource("SpriteFrames_xvhiq")
 autoplay = "default"
 
-[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="caca"]
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="caca" unique_id=1577021222]
 position = Vector2(235, 225)
 scale = Vector2(1.715, 1.715)
 sprite_frames = SubResource("SpriteFrames_xvhiq")
 animation = &"new_animation"
 autoplay = "new_animation"
 
-[node name="mari" type="Area2D" parent="."]
+[node name="mari" type="Area2D" parent="." unique_id=1870751994]
 position = Vector2(499, 297)
 scale = Vector2(1.55684, 1.60569)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="mari"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="mari" unique_id=2020096520]
 position = Vector2(441, 243)
 scale = Vector2(-1.82, 1.82)
 sprite_frames = SubResource("SpriteFrames_706pg")
 autoplay = "default"
 
-[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="mari"]
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="mari" unique_id=2033168204]
 position = Vector2(439, 244)
 scale = Vector2(1.715, 1.715)
 sprite_frames = SubResource("SpriteFrames_xvhiq")

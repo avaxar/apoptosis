@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dumiogewe3lma"]
+[gd_scene format=3 uid="uid://dumiogewe3lma"]
 
 [ext_resource type="Script" uid="uid://coqrjmg0e7ryd" path="res://scripts/background.gd" id="1_bg62f"]
 [ext_resource type="Texture2D" uid="uid://b7qmgbsb6eh38" path="res://textures/background.png" id="2_gnqxg"]
@@ -6,124 +6,124 @@
 [ext_resource type="Texture2D" uid="uid://bwyhdhubbjnje" path="res://textures/midground2.png" id="3_syrcn"]
 [ext_resource type="PackedScene" uid="uid://krcob3k02sbi" path="res://scenes/wall.tscn" id="4_t28s4"]
 
-[node name="Background" type="Node2D"]
+[node name="Background" type="Node2D" unique_id=801623645]
 script = ExtResource("1_bg62f")
 
-[node name="background1" type="Area2D" parent="."]
+[node name="background1" type="Area2D" parent="." unique_id=1989742812]
 
-[node name="Sprite2D2" type="Sprite2D" parent="background1"]
+[node name="Sprite2D2" type="Sprite2D" parent="background1" unique_id=20923600]
 modulate = Color(0.111015, 0.488176, 0.682502, 1)
 position = Vector2(640, 360)
 texture = ExtResource("2_gnqxg")
 
-[node name="midground" type="Node2D" parent="."]
+[node name="midground" type="Node2D" parent="." unique_id=31020898]
 modulate = Color(8.66354e-07, 0.623687, 0.628852, 1)
 
-[node name="midground2" type="Node2D" parent="midground"]
+[node name="midground2" type="Node2D" parent="midground" unique_id=1236570701]
 
-[node name="Sprite2D3" type="Sprite2D" parent="midground/midground2"]
+[node name="Sprite2D3" type="Sprite2D" parent="midground/midground2" unique_id=165618535]
 position = Vector2(304, 280)
 scale = Vector2(0.315, 0.315)
 texture = ExtResource("3_syrcn")
 
-[node name="Sprite2D11" type="Sprite2D" parent="midground/midground2"]
+[node name="Sprite2D11" type="Sprite2D" parent="midground/midground2" unique_id=1175594709]
 position = Vector2(-96, 103)
 scale = Vector2(0.315, 0.315)
 texture = ExtResource("3_syrcn")
 
-[node name="Sprite2D4" type="Sprite2D" parent="midground/midground2"]
+[node name="Sprite2D4" type="Sprite2D" parent="midground/midground2" unique_id=540819354]
 position = Vector2(707, 458)
 scale = Vector2(0.315, 0.315)
 texture = ExtResource("3_syrcn")
 
-[node name="Sprite2D10" type="Sprite2D" parent="midground/midground2"]
+[node name="Sprite2D10" type="Sprite2D" parent="midground/midground2" unique_id=34469412]
 position = Vector2(707, 875)
 scale = Vector2(0.315, 0.315)
 texture = ExtResource("3_syrcn")
 
-[node name="Sprite2D8" type="Sprite2D" parent="midground/midground2"]
+[node name="Sprite2D8" type="Sprite2D" parent="midground/midground2" unique_id=1527927349]
 position = Vector2(304, 694)
 scale = Vector2(0.315, 0.315)
 texture = ExtResource("3_syrcn")
 
-[node name="Sprite2D9" type="Sprite2D" parent="midground/midground2"]
+[node name="Sprite2D9" type="Sprite2D" parent="midground/midground2" unique_id=1589999512]
 position = Vector2(1107, 638)
 scale = Vector2(0.315, 0.315)
 texture = ExtResource("3_syrcn")
 
-[node name="Sprite2D5" type="Sprite2D" parent="midground/midground2"]
+[node name="Sprite2D5" type="Sprite2D" parent="midground/midground2" unique_id=194140035]
 position = Vector2(1107, 220)
 scale = Vector2(0.315, 0.315)
 texture = ExtResource("3_syrcn")
 
-[node name="Sprite2D6" type="Sprite2D" parent="midground/midground2"]
+[node name="Sprite2D6" type="Sprite2D" parent="midground/midground2" unique_id=2138485792]
 position = Vector2(707, 36)
 scale = Vector2(0.315, 0.315)
 texture = ExtResource("3_syrcn")
 
-[node name="Sprite2D7" type="Sprite2D" parent="midground/midground2"]
+[node name="Sprite2D7" type="Sprite2D" parent="midground/midground2" unique_id=785957631]
 position = Vector2(-95.9999, 512)
 scale = Vector2(0.315, 0.315)
 texture = ExtResource("3_syrcn")
 
-[node name="midground3" type="Node2D" parent="midground"]
+[node name="midground3" type="Node2D" parent="midground" unique_id=1256860528]
 position = Vector2(2, -836)
 
-[node name="Sprite2D3" type="Sprite2D" parent="midground/midground3"]
+[node name="Sprite2D3" type="Sprite2D" parent="midground/midground3" unique_id=1109469776]
 position = Vector2(304, 280)
 scale = Vector2(0.315, 0.315)
 texture = ExtResource("3_syrcn")
 
-[node name="Sprite2D11" type="Sprite2D" parent="midground/midground3"]
+[node name="Sprite2D11" type="Sprite2D" parent="midground/midground3" unique_id=949368946]
 position = Vector2(-96, 103)
 scale = Vector2(0.315, 0.315)
 texture = ExtResource("3_syrcn")
 
-[node name="Sprite2D4" type="Sprite2D" parent="midground/midground3"]
+[node name="Sprite2D4" type="Sprite2D" parent="midground/midground3" unique_id=876688504]
 position = Vector2(707, 458)
 scale = Vector2(0.315, 0.315)
 texture = ExtResource("3_syrcn")
 
-[node name="Sprite2D8" type="Sprite2D" parent="midground/midground3"]
+[node name="Sprite2D8" type="Sprite2D" parent="midground/midground3" unique_id=1218991890]
 position = Vector2(304, 694)
 scale = Vector2(0.315, 0.315)
 texture = ExtResource("3_syrcn")
 
-[node name="Sprite2D9" type="Sprite2D" parent="midground/midground3"]
+[node name="Sprite2D9" type="Sprite2D" parent="midground/midground3" unique_id=129525578]
 position = Vector2(1107, 638)
 scale = Vector2(0.315, 0.315)
 texture = ExtResource("3_syrcn")
 
-[node name="Sprite2D5" type="Sprite2D" parent="midground/midground3"]
+[node name="Sprite2D5" type="Sprite2D" parent="midground/midground3" unique_id=2114071143]
 position = Vector2(1107, 220)
 scale = Vector2(0.315, 0.315)
 texture = ExtResource("3_syrcn")
 
-[node name="Sprite2D6" type="Sprite2D" parent="midground/midground3"]
+[node name="Sprite2D6" type="Sprite2D" parent="midground/midground3" unique_id=1038247813]
 position = Vector2(707, 36)
 scale = Vector2(0.315, 0.315)
 texture = ExtResource("3_syrcn")
 
-[node name="Sprite2D7" type="Sprite2D" parent="midground/midground3"]
+[node name="Sprite2D7" type="Sprite2D" parent="midground/midground3" unique_id=2079488055]
 position = Vector2(-95.9999, 512)
 scale = Vector2(0.315, 0.315)
 texture = ExtResource("3_syrcn")
 
-[node name="background2" type="Area2D" parent="."]
+[node name="background2" type="Area2D" parent="." unique_id=1340670262]
 modulate = Color(0.500611, 0.863867, 0.571383, 1)
 
-[node name="Sprite2D" type="Sprite2D" parent="background2"]
+[node name="Sprite2D" type="Sprite2D" parent="background2" unique_id=93588742]
 position = Vector2(640, 360)
 texture = ExtResource("3_b6cqw")
 
-[node name="Sprite2D2" type="Sprite2D" parent="background2"]
+[node name="Sprite2D2" type="Sprite2D" parent="background2" unique_id=78740277]
 position = Vector2(640, -360)
 rotation = -6.28319
 texture = ExtResource("3_b6cqw")
 
-[node name="wall1" parent="." instance=ExtResource("4_t28s4")]
+[node name="wall1" parent="." unique_id=1282310491 instance=ExtResource("4_t28s4")]
 position = Vector2(-134, 21)
 
-[node name="wall2" parent="." instance=ExtResource("4_t28s4")]
+[node name="wall2" parent="." unique_id=325549107 instance=ExtResource("4_t28s4")]
 position = Vector2(1445, -15)
 scale = Vector2(-1, 1)

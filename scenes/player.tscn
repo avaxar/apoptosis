@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://cb47nxe3bwv83"]
+[gd_scene format=3 uid="uid://cb47nxe3bwv83"]
 
 [ext_resource type="Script" uid="uid://bcmjxnytq2ewy" path="res://scripts/player.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://ctcrsqikgrp2x" path="res://textures/mari_idle.png" id="2_g2els"]
@@ -94,35 +94,35 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" unique_id=1645508027]
 script = ExtResource("1_g2els")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2019151600]
 position = Vector2(0, -15)
 shape = SubResource("CapsuleShape2D_3vyb7")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1596910641]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_g2els")
 animation = &"idle"
 autoplay = "idle"
 frame_progress = 0.910022
 
-[node name="Gun" type="Sprite2D" parent="."]
+[node name="Gun" type="Sprite2D" parent="." unique_id=1053546504]
 position = Vector2(5, -9)
 rotation = -0.0959931
 texture = ExtResource("4_dqkch")
 offset = Vector2(3.25, -2.68)
 
-[node name="Hold" type="AudioStreamPlayer" parent="."]
+[node name="Hold" type="AudioStreamPlayer" parent="." unique_id=1130412710]
 stream = ExtResource("5_swbrj")
 volume_db = -9.0
 
-[node name="Shoot" type="AudioStreamPlayer" parent="."]
+[node name="Shoot" type="AudioStreamPlayer" parent="." unique_id=560785889]
 stream = ExtResource("6_xp0yg")
 pitch_scale = 1.32
 
-[node name="Charge" type="AudioStreamPlayer" parent="."]
+[node name="Charge" type="AudioStreamPlayer" parent="." unique_id=2103192834]
 stream = ExtResource("7_naebd")
 volume_db = -9.0
 

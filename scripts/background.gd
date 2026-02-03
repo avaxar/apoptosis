@@ -3,33 +3,33 @@ extends Node2D
 const wall_start_pos = Vector2(-145, 0)
 const wall_start_pos2 = Vector2(1420, 0)
 const background_pos2 = Vector2(0, 0)
-const midground_pos = Vector2(0,0)
+const midground_pos = Vector2(0, 0)
 
 var speed: float
-const start_speed: float = 4.0 
-const max_speed: float = 20.0 
+const start_speed: float = 4.0
+const max_speed: float = 20.0
 
 
 func start_game():
-	$wall1.position = wall_start_pos 
+	$wall1.position = wall_start_pos
 	$wall2.position = wall_start_pos2
 	$background2.position = background_pos2
-	$midground.position = midground_pos	
-	
+	$midground.position = midground_pos
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	start_game()
 
-	
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	speed = start_speed
-	
+
 	$wall1.position.y += speed * 45.0 * _delta
 	$wall2.position.y += speed * 45.0 * _delta
 	$background2.position.y += speed * 30.0 * _delta
 	$midground.position.y += speed * 25.0 * _delta
-	
+
 	if $wall1.position.y > 1450:
 		$wall1.position.y = 30
 	if $wall2.position.y > 1450:

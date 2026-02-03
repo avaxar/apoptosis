@@ -29,7 +29,7 @@ func _process(delta: float) -> void:
 
 	velocity.y -= DRAG * delta
 	position += velocity * delta
-	
+
 	if global_position.y < -360 or global_position.y > 1080:
 		queue_free()
 
@@ -38,7 +38,7 @@ var popped := false
 func pop() -> void:
 	if popped:
 		return
-	
+
 	play("pop")
 	timer.start()
 	popped = true

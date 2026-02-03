@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://dq37o2n0pe38a"]
+[gd_scene format=3 uid="uid://dq37o2n0pe38a"]
 
 [ext_resource type="Script" uid="uid://xe4smi04mcqp" path="res://scripts/enemy_bubble.gd" id="1_4lyxf"]
 [ext_resource type="PackedScene" uid="uid://bjp7lcojflgop" path="res://scenes/bubble.tscn" id="1_vcj8g"]
@@ -79,28 +79,28 @@ animations = [{
 radius = 11.0
 height = 24.0
 
-[node name="EnemyBubble" type="Node2D"]
+[node name="EnemyBubble" type="Node2D" unique_id=1079199467]
 script = ExtResource("1_4lyxf")
 
-[node name="Bubble" parent="." instance=ExtResource("1_vcj8g")]
+[node name="Bubble" parent="." unique_id=1807241802 instance=ExtResource("1_vcj8g")]
 
-[node name="Enemy" type="CharacterBody2D" parent="Bubble"]
+[node name="Enemy" type="CharacterBody2D" parent="Bubble" unique_id=84163339]
 collision_layer = 0
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Bubble/Enemy"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Bubble/Enemy" unique_id=2128541540]
 z_index = -1
 scale = Vector2(1.5, 1.5)
 sprite_frames = SubResource("SpriteFrames_h3ipi")
 animation = &"side"
 autoplay = "side"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Bubble/Enemy"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bubble/Enemy" unique_id=818110936]
 shape = SubResource("CapsuleShape2D_pcftv")
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Timer" type="Timer" parent="." unique_id=1142781103]
 autostart = true
 
-[node name="Shoot" type="AudioStreamPlayer" parent="."]
+[node name="Shoot" type="AudioStreamPlayer" parent="." unique_id=1297446082]
 stream = ExtResource("5_ljmft")
 volume_db = -21.638
 

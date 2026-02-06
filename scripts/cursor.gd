@@ -23,7 +23,7 @@ func _exit_tree() -> void:
 
 func _process(_delta: float) -> void:
 	global_position = get_viewport().get_mouse_position()
-	if held:
+	if held and not %PlayerBubble.popped:
 		var factor: float = %Player.calculate_bubble_factor(Time.get_unix_time_from_system() - %Player.last_mouse_click)
 		position += (Vector2(randf() - 0.5, randf() - 0.5)) * 10.0 * (factor ** 2)
 		modulate = Color(1.0, 1.0 - factor, 1.0 - factor, 1.0);

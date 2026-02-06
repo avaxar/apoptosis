@@ -42,12 +42,9 @@ func _process(delta: float) -> void:
 	%Map.position.y = progression / 100.0 * map_size
 
 	if %Player.global_position.y >= 720:
-		var x: float = ((%Player.global_position.y - 720.0) / 144.0)
-		if x <= 0.8:
-			%FillColor.modulate = Color(1.0, 0.0, 0.0, x / 0.8)
-		else:
-			var y := ((x - 0.8) * 5.0) ** 2
-			%FillColor.modulate = Color(1.0 - y, 0.0, 0.0, 1.0)
+		var x: float = ((%Player.global_position.y - 720.0) / 144.0) ** 1.5
+		%FillColor.modulate = Color(0.0, 0.0, 0.0, minf(x, 1.0))
+		%Music.volume_db = lerpf(-10.0, -60.0, x)
 		#%WorldEnvironment.environment.glow_bloom = x
-		if x >= 1.0:
+		if x >= 1.15:
 			get_tree().change_scene_to_file("res://scenes/death.tscn")

@@ -7,7 +7,7 @@ extends CharacterBody2D
 
 const SPEED := 32.0
 const JUMP_VEL := 80.0
-const GRAVITY := 80.0
+const GRAVITY := 160.0
 
 var in_bubble: bool:
 	get:
@@ -27,20 +27,26 @@ func face(direction: int) -> void:
 func _process(delta: float) -> void:
 	if %PlayerBubble.popped:
 		collision.disabled = true
-
-	if is_on_floor():
-		if Input.is_action_just_pressed("jump"):
-			velocity.y -= JUMP_VEL
+		velocity.y += GRAVITY * delta
+		$Charge.stop()
+		$Hold.stop()
 	else:
-		velocity.y += GRAVITY * delta;
+		global_position = %PlayerBubble/Tiles/TileMap.global_position + Vector2(0.0, -32.0)
 
-	var direction := Input.get_axis("move_left", "move_right")
-	if direction:
-		face(int(direction))
-		velocity.x = direction * SPEED
-		sprite.play("walk")
-	else:
-		velocity.x = move_toward(velocity.x, 0.0, SPEED)
+	# if is_on_floor():
+	# 	if Input.is_action_just_pressed("jump"):
+	# 		velocity.y -= JUMP_VEL
+	# else:
+	# 	velocity.y += GRAVITY * delta;
+
+	# var direction := Input.get_axis("move_left", "move_right")
+	# if direction:
+	# 	face(int(direction))
+	# 	velocity.x = direction * SPEED
+	# 	sprite.play("walk")
+	# else:
+	if true:
+		# velocity.x = move_toward(velocity.x, 0.0, SPEED)
 		sprite.play("idle")
 		if %Cursor.global_position.x > global_position.x:
 			face(1)
@@ -55,8 +61,8 @@ func _process(delta: float) -> void:
 		if calculate_bubble_air(period) > %PlayerBubble.air:
 			shoot_bubble(get_viewport().get_mouse_position(), period)
 
-var last_mouse_click: float
-var last_shot: float
+@onready var last_mouse_click: float = Time.get_unix_time_from_system()
+@onready var last_shot: float = Time.get_unix_time_from_system()
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT:
@@ -92,6 +98,8 @@ func shoot_bubble(target: Vector2, time: float):
 
 	const MIN_TIME := 0.2
 	if (time < MIN_TIME):
+		$Charge.stop()
+		$Hold.stop()
 		return
 
 	$Charge.stop()

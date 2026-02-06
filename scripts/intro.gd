@@ -15,7 +15,7 @@ func _process(delta: float) -> void:
 
 		frame.modulate.a = x
 
-	if Input.is_action_just_pressed("jump"):
+	if Input.is_action_just_pressed("jump") or Input.is_action_just_pressed("mouse_down"):
 		time += 2.5
 		if time >= 17.5:
 			get_tree().change_scene_to_file("res://scenes/level.tscn")
